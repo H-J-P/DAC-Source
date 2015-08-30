@@ -1,0 +1,17 @@
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.exe.config
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.csproj.ResolveComReference.cache
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.exe.config
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.csproj.ResolveComReference.cache
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.exe.manifest
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.application
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.exe
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\DAC.pdb
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Release\ArcazeHid.dll
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.FormMain.resources
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.Properties.Resources.resources
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.csproj.GenerateResource.Cache
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.TrustInfo.xml
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.exe.manifest
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.application
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.exe
+C:\Users\uidf6927\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Release\DAC.pdb

@@ -1,0 +1,9 @@
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\bin\Debug\DTA.exe.config
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\bin\Debug\DTA.exe
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\bin\Debug\DTA.pdb
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.csprojResolveAssemblyReference.cache
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.FormMain.resources
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.Properties.Resources.resources
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.csproj.GenerateResource.Cache
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.exe
+C:\Users\uidf6927\Desktop\Arcaze\DTA\DTA\DTA\obj\Debug\DTA.pdb
