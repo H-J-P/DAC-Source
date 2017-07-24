@@ -1,0 +1,16 @@
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.FormMain.resources
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.Properties.Resources.resources
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\DCS\Projekte\DAC\DTA\bin\Debug\DAC.exe.config
+E:\DCS\Projekte\DAC\DTA\bin\Debug\DAC.exe.manifest
+E:\DCS\Projekte\DAC\DTA\bin\Debug\DAC.application
+E:\DCS\Projekte\DAC\DTA\bin\Debug\DAC.exe
+E:\DCS\Projekte\DAC\DTA\bin\Debug\DAC.pdb
+E:\DCS\Projekte\DAC\DTA\bin\Debug\ArcazeHid.dll
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.TrustInfo.xml
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.exe.manifest
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.application
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.exe
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.pdb
+E:\DCS\Projekte\DAC\DTA\obj\Debug\DAC.csprojResolveAssemblyReference.cache

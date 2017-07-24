@@ -73,7 +73,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>1402004991_37699.ico</ApplicationIcon>
+    <ApplicationIcon>Ikarus_64.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -88,10 +88,6 @@
     <Reference Include="ArcazeHid, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ArcazeHid.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <SpecificVersion>False</SpecificVersion>
@@ -161,6 +157,9 @@
   <ItemGroup>
     <Content Include="1402004991_37699.ico" />
     <Content Include="Donations.png" />
+    <Content Include="Ikarus_64.ico" />
+    <Content Include="Logo_01.jpg" />
+    <None Include="Resources\Logo_01.jpg" />
     <None Include="Resources\btn_donateCC_LG.gif" />
     <None Include="Resources\Donations.png" />
   </ItemGroup>

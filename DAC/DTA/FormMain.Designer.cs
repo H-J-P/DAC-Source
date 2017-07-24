@@ -59,57 +59,53 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Displays = new System.Windows.Forms.TabPage();
@@ -138,6 +134,7 @@
             this.dataColumn61 = new System.Data.DataColumn();
             this.dataColumn116 = new System.Data.DataColumn();
             this.dataColumn118 = new System.Data.DataColumn();
+            this.dataColumn142 = new System.Data.DataColumn();
             this.dataTable3 = new System.Data.DataTable();
             this.dataColumn10 = new System.Data.DataColumn();
             this.dataColumn11 = new System.Data.DataColumn();
@@ -172,8 +169,8 @@
             this.dataTable7 = new System.Data.DataTable();
             this.dataColumn43 = new System.Data.DataColumn();
             this.dataColumn44 = new System.Data.DataColumn();
+            this.dataColumn143 = new System.Data.DataColumn();
             this.dataColumn4 = new System.Data.DataColumn();
-            this.dataColumn16 = new System.Data.DataColumn();
             this.dataTable10 = new System.Data.DataTable();
             this.dataColumn49 = new System.Data.DataColumn();
             this.dataColumn50 = new System.Data.DataColumn();
@@ -194,6 +191,7 @@
             this.dataColumn88 = new System.Data.DataColumn();
             this.dataColumn83 = new System.Data.DataColumn();
             this.dataColumn131 = new System.Data.DataColumn();
+            this.dataColumn16 = new System.Data.DataColumn();
             this.dataTable15 = new System.Data.DataTable();
             this.dataColumn86 = new System.Data.DataColumn();
             this.dataColumn87 = new System.Data.DataColumn();
@@ -287,6 +285,7 @@
             this.dimmMode = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dimmTime = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dimmValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LED_Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deviceIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Switches = new System.Windows.Forms.TabPage();
             this.dataGridViewSwitches = new System.Windows.Forms.DataGridView();
@@ -311,20 +310,21 @@
             this.valueCalcSendEncoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewEncoderValues = new System.Windows.Forms.DataGridView();
-            this.EncoderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ActiveEncoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.InitEncoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ReverseEncoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Arcaze = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.EncoderNumber = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.MinValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaxValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DentValue = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.CalcValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReadValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ArcazeAndEncoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SendValue = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.OldValueEncoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.active_Encoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.init_Encoders = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Reverse_Encoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.sendValue_Encoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.arcaze_Encoder = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.encoder_Number = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.minValue_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maxValue_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calcValue_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dentValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.readValue_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastReadValue_Encoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arcazeAndEncoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oldValueEncoder = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ADC = new System.Windows.Forms.TabPage();
             this.dataGridViewADC = new System.Windows.Forms.DataGridView();
             this.ADCactive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -338,6 +338,15 @@
             this.oldValueADC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Keystrokes = new System.Windows.Forms.TabPage();
             this.dataGridViewKeystrokes = new System.Windows.Forms.DataGridView();
+            this.keystrokesActive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.keystrokesInit = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.keystrokesReverse = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.SendNotOff = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.keystrokesArcaze = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.keystrokesPort = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.keystrokesPin = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ValueRead = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OptionKeyOne = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataSetConfig = new System.Data.DataSet();
             this.dataTable6 = new System.Data.DataTable();
             this.dataColumn40 = new System.Data.DataColumn();
@@ -378,21 +387,26 @@
             this.dataTable8 = new System.Data.DataTable();
             this.dataColumn122 = new System.Data.DataColumn();
             this.dataColumn123 = new System.Data.DataColumn();
+            this.OptionKeyTwo = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Key = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.KeystrokesOff = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ProzessName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExportID = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dataGridViewDevices = new System.Windows.Forms.DataGridView();
             this.deviceIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discriptionDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridViewClickable = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DcsID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiviceID = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.clickableButton = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TypeClickable = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dcsIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewArcaze = new System.Windows.Forms.DataGridView();
             this.arcazeNameArcazes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ModulTypID = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ActiveArcazes = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -530,6 +544,7 @@
             this.Info = new System.Windows.Forms.TabPage();
             this.listBoxVersion = new System.Windows.Forms.ListBox();
             this.Copyright = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listBoxCopyright = new System.Windows.Forms.ListBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.buttonOpenFile = new System.Windows.Forms.Button();
@@ -555,19 +570,10 @@
             this.textBoxInputChanged = new System.Windows.Forms.TextBox();
             this.ActiveADC = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.InitADC = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.keystrokesActive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.keystrokesInit = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.keystrokesReverse = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.SendNotOff = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.keystrokesArcaze = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.keystrokesPort = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.keystrokesPin = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ValueRead = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OptionKeyOne = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.OptionKeyTwo = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Key = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.KeystrokesOff = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ProzessName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelCount = new System.Windows.Forms.Label();
+            this.EncoderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActiveEncoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.InitEncoder = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tabControl1.SuspendLayout();
             this.Displays.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDisplays)).BeginInit();
@@ -608,6 +614,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable8)).BeginInit();
             this.ExportID.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDevices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClickable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArcaze)).BeginInit();
@@ -640,6 +647,7 @@
             this.Help.SuspendLayout();
             this.Info.SuspendLayout();
             this.Copyright.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -662,10 +670,10 @@
             this.tabControl1.Controls.Add(this.Info);
             this.tabControl1.Controls.Add(this.Copyright);
             this.tabControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-2, 12);
+            this.tabControl1.Location = new System.Drawing.Point(-2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1035, 565);
+            this.tabControl1.Size = new System.Drawing.Size(1035, 655);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
@@ -676,7 +684,7 @@
             this.Displays.Location = new System.Drawing.Point(4, 22);
             this.Displays.Name = "Displays";
             this.Displays.Padding = new System.Windows.Forms.Padding(3);
-            this.Displays.Size = new System.Drawing.Size(1027, 539);
+            this.Displays.Size = new System.Drawing.Size(1027, 629);
             this.Displays.TabIndex = 0;
             this.Displays.Text = "Displays";
             // 
@@ -728,7 +736,7 @@
             this.dataGridViewDisplays.RowHeadersWidth = 25;
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewDisplays.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewDisplays.Size = new System.Drawing.Size(1031, 539);
+            this.dataGridViewDisplays.Size = new System.Drawing.Size(1031, 623);
             this.dataGridViewDisplays.TabIndex = 0;
             this.dataGridViewDisplays.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewDisplays_CellValueChanged);
             this.dataGridViewDisplays.ColumnDividerDoubleClick += new System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventHandler(this.DataGridViewDisplays_ColumnDividerDoubleClick);
@@ -785,7 +793,7 @@
             this.arcazeDisplays.Name = "arcazeDisplays";
             this.arcazeDisplays.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.arcazeDisplays.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.arcazeDisplays.ValueMember = "Arcaze.Arcaze";
+            this.arcazeDisplays.ValueMember = "Arcaze.SerialNumber";
             this.arcazeDisplays.Width = 205;
             // 
             // dataSetDisplaysLEDs
@@ -845,7 +853,8 @@
             this.dataColumn33,
             this.dataColumn61,
             this.dataColumn116,
-            this.dataColumn118});
+            this.dataColumn118,
+            this.dataColumn142});
             this.dataTable1.Constraints.AddRange(new System.Data.Constraint[] {
             new System.Data.ForeignKeyConstraint("RelationDCS_ID_LEDExportID", "DCS_ID", new string[] {
                         "ExportID"}, new string[] {
@@ -936,6 +945,11 @@
             // 
             this.dataColumn118.ColumnName = "deviceIndex";
             // 
+            // dataColumn142
+            // 
+            this.dataColumn142.ColumnName = "LEDMax";
+            this.dataColumn142.DefaultValue = "1.0";
+            // 
             // dataTable3
             // 
             this.dataTable3.Columns.AddRange(new System.Data.DataColumn[] {
@@ -952,14 +966,17 @@
             // 
             this.dataColumn10.Caption = "ExportID";
             this.dataColumn10.ColumnName = "ExportID";
+            this.dataColumn10.DefaultValue = "0";
             // 
             // dataColumn11
             // 
             this.dataColumn11.ColumnName = "Description";
+            this.dataColumn11.DefaultValue = "-";
             // 
             // dataColumn9
             // 
             this.dataColumn9.ColumnName = "ExportIDWithDescription";
+            this.dataColumn9.DefaultValue = "-";
             // 
             // dataColumn134
             // 
@@ -1137,8 +1154,8 @@
             this.dataTable7.Columns.AddRange(new System.Data.DataColumn[] {
             this.dataColumn43,
             this.dataColumn44,
-            this.dataColumn4,
-            this.dataColumn16});
+            this.dataColumn143,
+            this.dataColumn4});
             this.dataTable7.TableName = "Arcaze";
             // 
             // dataColumn43
@@ -1151,15 +1168,13 @@
             this.dataColumn44.DataType = typeof(bool);
             this.dataColumn44.DefaultValue = false;
             // 
+            // dataColumn143
+            // 
+            this.dataColumn143.ColumnName = "SerialNumber";
+            // 
             // dataColumn4
             // 
             this.dataColumn4.ColumnName = "ModulTypID";
-            this.dataColumn4.DefaultValue = "Arcaze USB";
-            // 
-            // dataColumn16
-            // 
-            this.dataColumn16.ColumnName = "ArcazeAdressAndModulTyp";
-            this.dataColumn16.DefaultValue = "";
             // 
             // dataTable10
             // 
@@ -1254,7 +1269,8 @@
             this.dataColumn77,
             this.dataColumn88,
             this.dataColumn83,
-            this.dataColumn131});
+            this.dataColumn131,
+            this.dataColumn16});
             this.dataTable11.Constraints.AddRange(new System.Data.Constraint[] {
             new System.Data.ForeignKeyConstraint("RelationDevicesClickabledata", "Devices", new string[] {
                         "DeviceID"}, new string[] {
@@ -1285,6 +1301,12 @@
             // 
             this.dataColumn131.ColumnName = "Type";
             this.dataColumn131.DefaultValue = "Switch";
+            // 
+            // dataColumn16
+            // 
+            this.dataColumn16.ColumnName = "DcsID";
+            this.dataColumn16.DataType = typeof(int);
+            this.dataColumn16.DefaultValue = 0;
             // 
             // dataTable15
             // 
@@ -1705,7 +1727,7 @@
             this.valueDisplays.DefaultCellStyle = dataGridViewCellStyle3;
             this.valueDisplays.HeaderText = "Value";
             this.valueDisplays.Name = "valueDisplays";
-            this.valueDisplays.Width = 70;
+            this.valueDisplays.Width = 65;
             // 
             // leftPaddingDataGridViewCheckBoxColumn
             // 
@@ -1800,7 +1822,7 @@
             this.LEDs.Controls.Add(this.dataGridViewLEDs);
             this.LEDs.Location = new System.Drawing.Point(4, 22);
             this.LEDs.Name = "LEDs";
-            this.LEDs.Size = new System.Drawing.Size(1027, 539);
+            this.LEDs.Size = new System.Drawing.Size(1027, 629);
             this.LEDs.TabIndex = 2;
             this.LEDs.Text = "LEDs";
             // 
@@ -1833,6 +1855,7 @@
             this.dimmMode,
             this.dimmTime,
             this.dimmValue,
+            this.LED_Max,
             this.deviceIndex});
             this.dataGridViewLEDs.DataMember = "LEDs";
             this.dataGridViewLEDs.DataSource = this.dataSetDisplaysLEDs;
@@ -1848,7 +1871,7 @@
             this.dataGridViewLEDs.Name = "dataGridViewLEDs";
             this.dataGridViewLEDs.RowHeadersWidth = 25;
             this.dataGridViewLEDs.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewLEDs.Size = new System.Drawing.Size(1031, 539);
+            this.dataGridViewLEDs.Size = new System.Drawing.Size(1031, 626);
             this.dataGridViewLEDs.TabIndex = 18;
             this.dataGridViewLEDs.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewLEDs_CellValueChanged);
             this.dataGridViewLEDs.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewLEDs_DataError);
@@ -1910,7 +1933,7 @@
             this.arcazeLEDs.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.arcazeLEDs.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.arcazeLEDs.ToolTipText = "Arcaze Address";
-            this.arcazeLEDs.ValueMember = "Arcaze.Arcaze";
+            this.arcazeLEDs.ValueMember = "Arcaze.SerialNumber";
             this.arcazeLEDs.Width = 205;
             // 
             // dcsExportIDLEDs
@@ -1928,7 +1951,7 @@
             this.dcsExportIDLEDs.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dcsExportIDLEDs.ToolTipText = "DCS ID from Export.lua";
             this.dcsExportIDLEDs.ValueMember = "ClickableLED.ID";
-            this.dcsExportIDLEDs.Width = 210;
+            this.dcsExportIDLEDs.Width = 205;
             // 
             // modulTypeID
             // 
@@ -2051,7 +2074,7 @@
             this.valueLEDs.HeaderText = "Value";
             this.valueLEDs.Name = "valueLEDs";
             this.valueLEDs.ToolTipText = "Value from DCS Export.lua";
-            this.valueLEDs.Width = 40;
+            this.valueLEDs.Width = 45;
             // 
             // dimmMode
             // 
@@ -2066,7 +2089,7 @@
             this.dimmMode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dimmMode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dimmMode.ToolTipText = "dimming mode";
-            this.dimmMode.Width = 35;
+            this.dimmMode.Width = 40;
             // 
             // dimmTime
             // 
@@ -2092,7 +2115,7 @@
             this.dimmTime.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dimmTime.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dimmTime.ToolTipText = "Timer Intervall in sec.";
-            this.dimmTime.Width = 50;
+            this.dimmTime.Width = 40;
             // 
             // dimmValue
             // 
@@ -2103,7 +2126,16 @@
             this.dimmValue.Name = "dimmValue";
             this.dimmValue.ReadOnly = true;
             this.dimmValue.ToolTipText = "dimming value";
-            this.dimmValue.Width = 40;
+            this.dimmValue.Visible = false;
+            this.dimmValue.Width = 25;
+            // 
+            // LED_Max
+            // 
+            this.LED_Max.DataPropertyName = "LEDMax";
+            this.LED_Max.HeaderText = "Max";
+            this.LED_Max.Name = "LED_Max";
+            this.LED_Max.ToolTipText = "Max Value LED Driver 3";
+            this.LED_Max.Width = 40;
             // 
             // deviceIndex
             // 
@@ -2120,7 +2152,7 @@
             this.Switches.Controls.Add(this.dataGridViewSwitches);
             this.Switches.Location = new System.Drawing.Point(4, 22);
             this.Switches.Name = "Switches";
-            this.Switches.Size = new System.Drawing.Size(1027, 539);
+            this.Switches.Size = new System.Drawing.Size(1027, 629);
             this.Switches.TabIndex = 11;
             this.Switches.Text = "Switches";
             // 
@@ -2165,7 +2197,7 @@
             this.dataGridViewSwitches.RowHeadersWidth = 25;
             dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewSwitches.RowsDefaultCellStyle = dataGridViewCellStyle24;
-            this.dataGridViewSwitches.Size = new System.Drawing.Size(1031, 536);
+            this.dataGridViewSwitches.Size = new System.Drawing.Size(1031, 626);
             this.dataGridViewSwitches.TabIndex = 0;
             this.dataGridViewSwitches.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSwitches_CellValueChanged);
             this.dataGridViewSwitches.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewSwitches_DataError);
@@ -2216,7 +2248,7 @@
             this.switchesArcaze.Name = "switchesArcaze";
             this.switchesArcaze.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.switchesArcaze.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.switchesArcaze.ValueMember = "Arcaze.Arcaze";
+            this.switchesArcaze.ValueMember = "Arcaze.SerialNumber";
             this.switchesArcaze.Width = 250;
             // 
             // switchesClickableID
@@ -2345,7 +2377,7 @@
             this.Encoders.Controls.Add(this.dataGridViewEncoderValues);
             this.Encoders.Location = new System.Drawing.Point(4, 22);
             this.Encoders.Name = "Encoders";
-            this.Encoders.Size = new System.Drawing.Size(1027, 539);
+            this.Encoders.Size = new System.Drawing.Size(1027, 629);
             this.Encoders.TabIndex = 12;
             this.Encoders.Text = "Encoders";
             // 
@@ -2376,12 +2408,12 @@
             dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewEncoderSend.DefaultCellStyle = dataGridViewCellStyle28;
-            this.dataGridViewEncoderSend.Location = new System.Drawing.Point(0, 256);
+            this.dataGridViewEncoderSend.Location = new System.Drawing.Point(0, 324);
             this.dataGridViewEncoderSend.Name = "dataGridViewEncoderSend";
             this.dataGridViewEncoderSend.RowHeadersWidth = 25;
             dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewEncoderSend.RowsDefaultCellStyle = dataGridViewCellStyle29;
-            this.dataGridViewEncoderSend.Size = new System.Drawing.Size(1027, 280);
+            this.dataGridViewEncoderSend.Size = new System.Drawing.Size(1027, 302);
             this.dataGridViewEncoderSend.TabIndex = 1;
             this.dataGridViewEncoderSend.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewEncoderSend_DataError);
             // 
@@ -2426,7 +2458,7 @@
             this.valueCalcSendEncoder.DataPropertyName = "ValueCalc";
             dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.valueCalcSendEncoder.DefaultCellStyle = dataGridViewCellStyle26;
-            this.valueCalcSendEncoder.HeaderText = "Value Calc";
+            this.valueCalcSendEncoder.HeaderText = "Calc Value";
             this.valueCalcSendEncoder.Name = "valueCalcSendEncoder";
             this.valueCalcSendEncoder.Width = 75;
             // 
@@ -2435,7 +2467,7 @@
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "ValueSend";
             dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewCheckBoxColumn1.DefaultCellStyle = dataGridViewCellStyle27;
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Value Send";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Send Value";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -2453,96 +2485,101 @@
             this.dataGridViewEncoderValues.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewEncoderValues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEncoderValues.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.EncoderID,
-            this.ActiveEncoder,
-            this.InitEncoder,
-            this.ReverseEncoder,
-            this.Arcaze,
-            this.EncoderNumber,
-            this.MinValue,
-            this.MaxValue,
-            this.DentValue,
-            this.CalcValue,
-            this.ReadValue,
-            this.ArcazeAndEncoder,
-            this.SendValue,
-            this.OldValueEncoder});
+            this.ID_Encoder,
+            this.active_Encoder,
+            this.init_Encoders,
+            this.Reverse_Encoder,
+            this.sendValue_Encoder,
+            this.arcaze_Encoder,
+            this.encoder_Number,
+            this.minValue_Encoder,
+            this.maxValue_Encoder,
+            this.calcValue_Encoder,
+            this.dentValue,
+            this.readValue_Encoder,
+            this.lastReadValue_Encoder,
+            this.arcazeAndEncoder,
+            this.oldValueEncoder});
             this.dataGridViewEncoderValues.DataMember = "Encoder";
             this.dataGridViewEncoderValues.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewEncoderValues.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewEncoderValues.DefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewEncoderValues.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewEncoderValues.Name = "dataGridViewEncoderValues";
             this.dataGridViewEncoderValues.RowHeadersWidth = 25;
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewEncoderValues.RowsDefaultCellStyle = dataGridViewCellStyle37;
-            this.dataGridViewEncoderValues.Size = new System.Drawing.Size(1027, 250);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewEncoderValues.RowsDefaultCellStyle = dataGridViewCellStyle32;
+            this.dataGridViewEncoderValues.Size = new System.Drawing.Size(1027, 318);
             this.dataGridViewEncoderValues.TabIndex = 0;
             this.dataGridViewEncoderValues.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEncoderValues_CellEndEdit);
-            this.dataGridViewEncoderValues.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEncoderValues_CellValueChanged);
+            this.dataGridViewEncoderValues.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEncoderValues_CellValueChanged);
             this.dataGridViewEncoderValues.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewEncoderValues_DataError);
             // 
-            // EncoderID
+            // ID_Encoder
             // 
-            this.EncoderID.DataPropertyName = "Id";
-            this.EncoderID.HeaderText = "Id";
-            this.EncoderID.Name = "EncoderID";
-            this.EncoderID.Visible = false;
+            this.ID_Encoder.DataPropertyName = "Id";
+            this.ID_Encoder.HeaderText = "Id";
+            this.ID_Encoder.Name = "ID_Encoder";
+            this.ID_Encoder.Visible = false;
+            this.ID_Encoder.Width = 25;
             // 
-            // ActiveEncoder
+            // active_Encoder
             // 
-            this.ActiveEncoder.DataPropertyName = "Active";
-            this.ActiveEncoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActiveEncoder.HeaderText = "A";
-            this.ActiveEncoder.Name = "ActiveEncoder";
-            this.ActiveEncoder.ToolTipText = "Active";
-            this.ActiveEncoder.Width = 20;
+            this.active_Encoder.DataPropertyName = "Active";
+            this.active_Encoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.active_Encoder.HeaderText = "A";
+            this.active_Encoder.Name = "active_Encoder";
+            this.active_Encoder.Width = 20;
             // 
-            // InitEncoder
+            // init_Encoders
             // 
-            this.InitEncoder.DataPropertyName = "Init";
-            this.InitEncoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InitEncoder.HeaderText = "I";
-            this.InitEncoder.Name = "InitEncoder";
-            this.InitEncoder.ReadOnly = true;
-            this.InitEncoder.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.InitEncoder.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.InitEncoder.ToolTipText = "Init (not changeable)";
-            this.InitEncoder.Width = 20;
+            this.init_Encoders.DataPropertyName = "Init";
+            this.init_Encoders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.init_Encoders.HeaderText = "I";
+            this.init_Encoders.Name = "init_Encoders";
+            this.init_Encoders.Width = 20;
             // 
-            // ReverseEncoder
+            // Reverse_Encoder
             // 
-            this.ReverseEncoder.DataPropertyName = "Reverse";
-            this.ReverseEncoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReverseEncoder.HeaderText = "R";
-            this.ReverseEncoder.Name = "ReverseEncoder";
-            this.ReverseEncoder.Width = 20;
+            this.Reverse_Encoder.DataPropertyName = "Reverse";
+            this.Reverse_Encoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reverse_Encoder.HeaderText = "R";
+            this.Reverse_Encoder.Name = "Reverse_Encoder";
+            this.Reverse_Encoder.Width = 20;
             // 
-            // Arcaze
+            // sendValue_Encoder
             // 
-            this.Arcaze.DataPropertyName = "Arcaze";
-            this.Arcaze.DataSource = this.dataSetDisplaysLEDs;
-            this.Arcaze.DisplayMember = "Arcaze.Arcaze";
-            this.Arcaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Arcaze.HeaderText = "Arcaze";
-            this.Arcaze.Name = "Arcaze";
-            this.Arcaze.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Arcaze.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Arcaze.ValueMember = "Arcaze.Arcaze";
-            this.Arcaze.Width = 305;
+            this.sendValue_Encoder.DataPropertyName = "SendValue";
+            this.sendValue_Encoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sendValue_Encoder.HeaderText = "S";
+            this.sendValue_Encoder.Name = "sendValue_Encoder";
+            this.sendValue_Encoder.Width = 20;
             // 
-            // EncoderNumber
+            // arcaze_Encoder
             // 
-            this.EncoderNumber.DataPropertyName = "EncoderNumber";
-            this.EncoderNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EncoderNumber.HeaderText = "Encoder";
-            this.EncoderNumber.Items.AddRange(new object[] {
+            this.arcaze_Encoder.DataPropertyName = "Arcaze";
+            this.arcaze_Encoder.DataSource = this.dataSetDisplaysLEDs;
+            this.arcaze_Encoder.DisplayMember = "Arcaze.Arcaze";
+            this.arcaze_Encoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.arcaze_Encoder.HeaderText = "Arcaze";
+            this.arcaze_Encoder.Name = "arcaze_Encoder";
+            this.arcaze_Encoder.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.arcaze_Encoder.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.arcaze_Encoder.ValueMember = "Arcaze.SerialNumber";
+            this.arcaze_Encoder.Width = 300;
+            // 
+            // encoder_Number
+            // 
+            this.encoder_Number.DataPropertyName = "EncoderNumber";
+            this.encoder_Number.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.encoder_Number.HeaderText = "Encoder";
+            this.encoder_Number.Items.AddRange(new object[] {
             "Encoder A01/A02",
             "Encoder A03/A04",
             "Encoder A05/A06",
@@ -2563,94 +2600,66 @@
             "Encoder B15/B16",
             "Encoder B17/B18",
             "Encoder B19/B20"});
-            this.EncoderNumber.Name = "EncoderNumber";
-            this.EncoderNumber.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.EncoderNumber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.EncoderNumber.Width = 200;
+            this.encoder_Number.Name = "encoder_Number";
+            this.encoder_Number.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.encoder_Number.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.encoder_Number.Width = 210;
             // 
-            // MinValue
+            // minValue_Encoder
             // 
-            this.MinValue.DataPropertyName = "MinValue";
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinValue.DefaultCellStyle = dataGridViewCellStyle31;
-            this.MinValue.HeaderText = "Value Min";
-            this.MinValue.Name = "MinValue";
-            this.MinValue.Width = 75;
+            this.minValue_Encoder.DataPropertyName = "MinValue";
+            this.minValue_Encoder.HeaderText = "Min Value";
+            this.minValue_Encoder.Name = "minValue_Encoder";
+            this.minValue_Encoder.Width = 70;
             // 
-            // MaxValue
+            // maxValue_Encoder
             // 
-            this.MaxValue.DataPropertyName = "MaxValue";
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxValue.DefaultCellStyle = dataGridViewCellStyle32;
-            this.MaxValue.HeaderText = "Value Max";
-            this.MaxValue.Name = "MaxValue";
-            this.MaxValue.Width = 75;
+            this.maxValue_Encoder.DataPropertyName = "MaxValue";
+            this.maxValue_Encoder.HeaderText = "Max Value";
+            this.maxValue_Encoder.Name = "maxValue_Encoder";
+            this.maxValue_Encoder.Width = 70;
             // 
-            // DentValue
+            // calcValue_Encoder
             // 
-            this.DentValue.DataPropertyName = "DentValue";
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DentValue.DefaultCellStyle = dataGridViewCellStyle33;
-            this.DentValue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DentValue.HeaderText = "Value Dent";
-            this.DentValue.Items.AddRange(new object[] {
-            "-0.05",
-            "-0.01",
-            "0.01",
-            "0.02",
-            "0.04",
-            "0.05",
-            "0.1",
-            "0.2",
-            "0.3",
-            "0.6",
-            "1.0"});
-            this.DentValue.Name = "DentValue";
-            this.DentValue.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DentValue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.DentValue.Width = 75;
+            this.calcValue_Encoder.DataPropertyName = "CalcValue";
+            this.calcValue_Encoder.HeaderText = "Calc Value";
+            this.calcValue_Encoder.Name = "calcValue_Encoder";
+            this.calcValue_Encoder.Width = 70;
             // 
-            // CalcValue
+            // dentValue
             // 
-            this.CalcValue.DataPropertyName = "CalcValue";
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CalcValue.DefaultCellStyle = dataGridViewCellStyle34;
-            this.CalcValue.HeaderText = "Value Calc";
-            this.CalcValue.Name = "CalcValue";
-            this.CalcValue.Width = 75;
+            this.dentValue.DataPropertyName = "DentValue";
+            this.dentValue.HeaderText = "Dent Value";
+            this.dentValue.Name = "dentValue";
+            this.dentValue.Width = 70;
             // 
-            // ReadValue
+            // readValue_Encoder
             // 
-            this.ReadValue.DataPropertyName = "ReadValue";
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ReadValue.DefaultCellStyle = dataGridViewCellStyle35;
-            this.ReadValue.HeaderText = "Read Dents";
-            this.ReadValue.Name = "ReadValue";
-            this.ReadValue.ToolTipText = "Value act. read";
-            this.ReadValue.Width = 75;
+            this.readValue_Encoder.DataPropertyName = "ReadValue";
+            this.readValue_Encoder.HeaderText = "Read Dents";
+            this.readValue_Encoder.Name = "readValue_Encoder";
+            this.readValue_Encoder.Width = 70;
             // 
-            // ArcazeAndEncoder
+            // lastReadValue_Encoder
             // 
-            this.ArcazeAndEncoder.DataPropertyName = "ArcazeAndEncoder";
-            this.ArcazeAndEncoder.HeaderText = "ArcazeAndEncoder";
-            this.ArcazeAndEncoder.Name = "ArcazeAndEncoder";
-            this.ArcazeAndEncoder.Visible = false;
+            this.lastReadValue_Encoder.DataPropertyName = "LastReadValue";
+            this.lastReadValue_Encoder.HeaderText = "LastReadValue";
+            this.lastReadValue_Encoder.Name = "lastReadValue_Encoder";
+            this.lastReadValue_Encoder.Visible = false;
             // 
-            // SendValue
+            // arcazeAndEncoder
             // 
-            this.SendValue.DataPropertyName = "SendValue";
-            this.SendValue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SendValue.HeaderText = "Refresh Value";
-            this.SendValue.Name = "SendValue";
-            this.SendValue.Visible = false;
-            this.SendValue.Width = 55;
+            this.arcazeAndEncoder.DataPropertyName = "ArcazeAndEncoder";
+            this.arcazeAndEncoder.HeaderText = "ArcazeAndEncoder";
+            this.arcazeAndEncoder.Name = "arcazeAndEncoder";
+            this.arcazeAndEncoder.Visible = false;
             // 
-            // OldValueEncoder
+            // oldValueEncoder
             // 
-            this.OldValueEncoder.DataPropertyName = "OldValueEncoder";
-            this.OldValueEncoder.HeaderText = "OldValueEncoder";
-            this.OldValueEncoder.Name = "OldValueEncoder";
-            this.OldValueEncoder.Visible = false;
+            this.oldValueEncoder.DataPropertyName = "OldValueEncoder";
+            this.oldValueEncoder.HeaderText = "OldValueEncoder";
+            this.oldValueEncoder.Name = "oldValueEncoder";
+            this.oldValueEncoder.Visible = false;
             // 
             // ADC
             // 
@@ -2658,15 +2667,15 @@
             this.ADC.Controls.Add(this.dataGridViewADC);
             this.ADC.Location = new System.Drawing.Point(4, 22);
             this.ADC.Name = "ADC";
-            this.ADC.Size = new System.Drawing.Size(1027, 539);
+            this.ADC.Size = new System.Drawing.Size(1027, 629);
             this.ADC.TabIndex = 15;
             this.ADC.Text = "ADC";
             // 
             // dataGridViewADC
             // 
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewADC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewADC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridViewADC.AutoGenerateColumns = false;
             this.dataGridViewADC.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewADC.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -2683,19 +2692,19 @@
             this.oldValueADC});
             this.dataGridViewADC.DataMember = "ADC";
             this.dataGridViewADC.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewADC.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewADC.DefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridViewADC.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewADC.Name = "dataGridViewADC";
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewADC.RowsDefaultCellStyle = dataGridViewCellStyle40;
-            this.dataGridViewADC.Size = new System.Drawing.Size(1027, 536);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewADC.RowsDefaultCellStyle = dataGridViewCellStyle35;
+            this.dataGridViewADC.Size = new System.Drawing.Size(1027, 657);
             this.dataGridViewADC.TabIndex = 0;
             this.dataGridViewADC.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewADC_DataError);
             // 
@@ -2716,7 +2725,7 @@
             this.ArcazeADC.Name = "ArcazeADC";
             this.ArcazeADC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ArcazeADC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ArcazeADC.ValueMember = "Arcaze.Arcaze";
+            this.ArcazeADC.ValueMember = "Arcaze.SerialNumber";
             this.ArcazeADC.Width = 250;
             // 
             // ADCChannel
@@ -2791,15 +2800,15 @@
             this.Keystrokes.Controls.Add(this.dataGridViewKeystrokes);
             this.Keystrokes.Location = new System.Drawing.Point(4, 22);
             this.Keystrokes.Name = "Keystrokes";
-            this.Keystrokes.Size = new System.Drawing.Size(1027, 539);
+            this.Keystrokes.Size = new System.Drawing.Size(1027, 629);
             this.Keystrokes.TabIndex = 13;
             this.Keystrokes.Text = "Keystrokes";
             // 
             // dataGridViewKeystrokes
             // 
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewKeystrokes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewKeystrokes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridViewKeystrokes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2823,23 +2832,140 @@
             this.ProzessName});
             this.dataGridViewKeystrokes.DataMember = "Keystrokes";
             this.dataGridViewKeystrokes.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewKeystrokes.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewKeystrokes.DefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridViewKeystrokes.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewKeystrokes.Name = "dataGridViewKeystrokes";
             this.dataGridViewKeystrokes.RowHeadersWidth = 25;
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewKeystrokes.RowsDefaultCellStyle = dataGridViewCellStyle48;
-            this.dataGridViewKeystrokes.Size = new System.Drawing.Size(1027, 536);
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewKeystrokes.RowsDefaultCellStyle = dataGridViewCellStyle43;
+            this.dataGridViewKeystrokes.Size = new System.Drawing.Size(1027, 626);
             this.dataGridViewKeystrokes.TabIndex = 0;
             this.dataGridViewKeystrokes.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewKeystrokes_CellValueChanged);
             this.dataGridViewKeystrokes.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewKeystrokes_DataError);
+            // 
+            // keystrokesActive
+            // 
+            this.keystrokesActive.DataPropertyName = "Active";
+            this.keystrokesActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesActive.HeaderText = "A";
+            this.keystrokesActive.Name = "keystrokesActive";
+            this.keystrokesActive.ToolTipText = "Active";
+            this.keystrokesActive.Width = 20;
+            // 
+            // keystrokesInit
+            // 
+            this.keystrokesInit.DataPropertyName = "Init";
+            this.keystrokesInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesInit.HeaderText = "I";
+            this.keystrokesInit.Name = "keystrokesInit";
+            this.keystrokesInit.ReadOnly = true;
+            this.keystrokesInit.ToolTipText = "Init (not changeable)";
+            this.keystrokesInit.Width = 20;
+            // 
+            // keystrokesReverse
+            // 
+            this.keystrokesReverse.DataPropertyName = "Reverse";
+            this.keystrokesReverse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesReverse.HeaderText = "R";
+            this.keystrokesReverse.Name = "keystrokesReverse";
+            this.keystrokesReverse.ToolTipText = "Reverse logic";
+            this.keystrokesReverse.Width = 20;
+            // 
+            // SendNotOff
+            // 
+            this.SendNotOff.DataPropertyName = "SendNotOff";
+            this.SendNotOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SendNotOff.HeaderText = "S";
+            this.SendNotOff.Name = "SendNotOff";
+            this.SendNotOff.Width = 20;
+            // 
+            // keystrokesArcaze
+            // 
+            this.keystrokesArcaze.DataPropertyName = "Arcaze";
+            this.keystrokesArcaze.DataSource = this.dataSetDisplaysLEDs;
+            this.keystrokesArcaze.DisplayMember = "Arcaze.Arcaze";
+            this.keystrokesArcaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesArcaze.HeaderText = "Arcaze";
+            this.keystrokesArcaze.Name = "keystrokesArcaze";
+            this.keystrokesArcaze.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.keystrokesArcaze.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.keystrokesArcaze.ValueMember = "Arcaze.SerialNumber";
+            this.keystrokesArcaze.Width = 230;
+            // 
+            // keystrokesPort
+            // 
+            this.keystrokesPort.DataPropertyName = "Port";
+            this.keystrokesPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesPort.HeaderText = "Port";
+            this.keystrokesPort.Items.AddRange(new object[] {
+            "Port A",
+            "Port B"});
+            this.keystrokesPort.Name = "keystrokesPort";
+            this.keystrokesPort.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.keystrokesPort.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.keystrokesPort.Width = 65;
+            // 
+            // keystrokesPin
+            // 
+            this.keystrokesPin.DataPropertyName = "Pin";
+            this.keystrokesPin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.keystrokesPin.HeaderText = "Pin";
+            this.keystrokesPin.Items.AddRange(new object[] {
+            "Pin-1",
+            "Pin-2",
+            "Pin-3",
+            "Pin-4",
+            "Pin-5",
+            "Pin-6",
+            "Pin-7",
+            "Pin-8",
+            "Pin-9",
+            "Pin-10",
+            "Pin-11",
+            "Pin-12",
+            "Pin-13",
+            "Pin-14",
+            "Pin-15",
+            "Pin-16",
+            "Pin-17",
+            "Pin-18",
+            "Pin-19",
+            "Pin-20"});
+            this.keystrokesPin.Name = "keystrokesPin";
+            this.keystrokesPin.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.keystrokesPin.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.keystrokesPin.Width = 65;
+            // 
+            // ValueRead
+            // 
+            this.ValueRead.DataPropertyName = "ValueRead";
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ValueRead.DefaultCellStyle = dataGridViewCellStyle37;
+            this.ValueRead.HeaderText = "Value Read";
+            this.ValueRead.Name = "ValueRead";
+            this.ValueRead.ReadOnly = true;
+            this.ValueRead.Width = 45;
+            // 
+            // OptionKeyOne
+            // 
+            this.OptionKeyOne.DataPropertyName = "OptionKeyOne";
+            this.OptionKeyOne.DataSource = this.dataSetConfig;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.OptionKeyOne.DefaultCellStyle = dataGridViewCellStyle38;
+            this.OptionKeyOne.DisplayMember = "VirtualOptionKeys.Key";
+            this.OptionKeyOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OptionKeyOne.HeaderText = "Option Key One";
+            this.OptionKeyOne.Name = "OptionKeyOne";
+            this.OptionKeyOne.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OptionKeyOne.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.OptionKeyOne.ValueMember = "VirtualOptionKeys.KeyCode";
             // 
             // dataSetConfig
             // 
@@ -3072,13 +3198,63 @@
             // 
             this.dataColumn123.ColumnName = "KeyCode";
             // 
+            // OptionKeyTwo
+            // 
+            this.OptionKeyTwo.DataPropertyName = "OptionKeyTwo";
+            this.OptionKeyTwo.DataSource = this.dataSetConfig;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.OptionKeyTwo.DefaultCellStyle = dataGridViewCellStyle39;
+            this.OptionKeyTwo.DisplayMember = "VirtualOptionKeys.Key";
+            this.OptionKeyTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OptionKeyTwo.HeaderText = "Option Key Two";
+            this.OptionKeyTwo.Name = "OptionKeyTwo";
+            this.OptionKeyTwo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OptionKeyTwo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.OptionKeyTwo.ValueMember = "VirtualOptionKeys.KeyCode";
+            // 
+            // Key
+            // 
+            this.Key.DataPropertyName = "Keystrokes";
+            this.Key.DataSource = this.dataSetConfig;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Key.DefaultCellStyle = dataGridViewCellStyle40;
+            this.Key.DisplayMember = "VirtualKeys.Key";
+            this.Key.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Key.HeaderText = "Key";
+            this.Key.Name = "Key";
+            this.Key.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Key.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Key.ValueMember = "VirtualKeys.KeyCode";
+            // 
+            // KeystrokesOff
+            // 
+            this.KeystrokesOff.DataPropertyName = "KeystrokesOff";
+            this.KeystrokesOff.DataSource = this.dataSetConfig;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.KeystrokesOff.DefaultCellStyle = dataGridViewCellStyle41;
+            this.KeystrokesOff.DisplayMember = "VirtualKeys.Key";
+            this.KeystrokesOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KeystrokesOff.HeaderText = "Key Pin Off";
+            this.KeystrokesOff.Name = "KeystrokesOff";
+            this.KeystrokesOff.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.KeystrokesOff.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.KeystrokesOff.ValueMember = "VirtualKeys.KeyCode";
+            this.KeystrokesOff.Visible = false;
+            // 
+            // ProzessName
+            // 
+            this.ProzessName.DataPropertyName = "ProzessName";
+            this.ProzessName.HeaderText = "Prozess name";
+            this.ProzessName.Name = "ProzessName";
+            this.ProzessName.Width = 150;
+            // 
             // ExportID
             // 
             this.ExportID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ExportID.Controls.Add(this.pictureBox3);
             this.ExportID.Controls.Add(this.dataGridViewDevices);
             this.ExportID.Controls.Add(this.label19);
             this.ExportID.Controls.Add(this.dataGridViewClickable);
-            this.ExportID.Controls.Add(this.label3);
             this.ExportID.Controls.Add(this.dataGridViewArcaze);
             this.ExportID.Controls.Add(this.label2);
             this.ExportID.Controls.Add(this.label8);
@@ -3086,14 +3262,26 @@
             this.ExportID.ForeColor = System.Drawing.Color.Gold;
             this.ExportID.Location = new System.Drawing.Point(4, 22);
             this.ExportID.Name = "ExportID";
-            this.ExportID.Size = new System.Drawing.Size(1027, 539);
+            this.ExportID.Size = new System.Drawing.Size(1027, 629);
             this.ExportID.TabIndex = 6;
             this.ExportID.Text = "Masterdata";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.ErrorImage = global::DAC.Properties.Resources.Logo_01;
+            this.pictureBox3.Image = global::DAC.Properties.Resources.Logo_01;
+            this.pictureBox3.Location = new System.Drawing.Point(904, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 207;
+            this.pictureBox3.TabStop = false;
+            // 
             // dataGridViewDevices
             // 
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewDevices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewDevices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridViewDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridViewDevices.AutoGenerateColumns = false;
@@ -3104,27 +3292,27 @@
             this.discriptionDataGridViewTextBoxColumn3});
             this.dataGridViewDevices.DataMember = "Devices";
             this.dataGridViewDevices.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewDevices.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDevices.DefaultCellStyle = dataGridViewCellStyle46;
             this.dataGridViewDevices.Location = new System.Drawing.Point(355, 29);
             this.dataGridViewDevices.Name = "dataGridViewDevices";
             this.dataGridViewDevices.RowHeadersWidth = 25;
-            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewDevices.RowsDefaultCellStyle = dataGridViewCellStyle52;
-            this.dataGridViewDevices.Size = new System.Drawing.Size(269, 507);
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDevices.RowsDefaultCellStyle = dataGridViewCellStyle47;
+            this.dataGridViewDevices.Size = new System.Drawing.Size(253, 597);
             this.dataGridViewDevices.TabIndex = 206;
             // 
             // deviceIDDataGridViewTextBoxColumn
             // 
             this.deviceIDDataGridViewTextBoxColumn.DataPropertyName = "DeviceID";
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.deviceIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.deviceIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle45;
             this.deviceIDDataGridViewTextBoxColumn.HeaderText = "Device ID";
             this.deviceIDDataGridViewTextBoxColumn.Name = "deviceIDDataGridViewTextBoxColumn";
             this.deviceIDDataGridViewTextBoxColumn.ToolTipText = "Device ID from device.lua";
@@ -3135,21 +3323,21 @@
             this.discriptionDataGridViewTextBoxColumn3.DataPropertyName = "Discription";
             this.discriptionDataGridViewTextBoxColumn3.HeaderText = "Discription";
             this.discriptionDataGridViewTextBoxColumn3.Name = "discriptionDataGridViewTextBoxColumn3";
-            this.discriptionDataGridViewTextBoxColumn3.Width = 175;
+            this.discriptionDataGridViewTextBoxColumn3.Width = 155;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(627, 151);
+            this.label19.Location = new System.Drawing.Point(614, 136);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(300, 13);
+            this.label19.Size = new System.Drawing.Size(325, 13);
             this.label19.TabIndex = 205;
-            this.label19.Text = "Device IDs and Button IDs (from clickabledata.lua)";
+            this.label19.Text = "Export, Device  and Button IDs (from clickabledata.lua)";
             // 
             // dataGridViewClickable
             // 
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewClickable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewClickable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle48;
             this.dataGridViewClickable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -3157,45 +3345,49 @@
             this.dataGridViewClickable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewClickable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewClickable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
+            this.DcsID,
             this.DiviceID,
             this.clickableButton,
             this.Discription,
-            this.TypeClickable});
+            this.TypeClickable,
+            this.iDDataGridViewTextBoxColumn,
+            this.dcsIDDataGridViewTextBoxColumn});
             this.dataGridViewClickable.DataMember = "Clickabledata";
             this.dataGridViewClickable.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewClickable.DefaultCellStyle = dataGridViewCellStyle56;
-            this.dataGridViewClickable.Location = new System.Drawing.Point(630, 167);
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClickable.DefaultCellStyle = dataGridViewCellStyle52;
+            this.dataGridViewClickable.Location = new System.Drawing.Point(614, 152);
             this.dataGridViewClickable.Name = "dataGridViewClickable";
             this.dataGridViewClickable.RowHeadersWidth = 25;
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewClickable.RowsDefaultCellStyle = dataGridViewCellStyle57;
-            this.dataGridViewClickable.Size = new System.Drawing.Size(392, 369);
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewClickable.RowsDefaultCellStyle = dataGridViewCellStyle53;
+            this.dataGridViewClickable.Size = new System.Drawing.Size(408, 474);
             this.dataGridViewClickable.TabIndex = 204;
             this.dataGridViewClickable.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewClickable_CellEndEdit);
             this.dataGridViewClickable.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewClickable_DataError);
             // 
-            // iDDataGridViewTextBoxColumn
+            // DcsID
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Visible = false;
-            this.iDDataGridViewTextBoxColumn.Width = 50;
+            this.DcsID.DataPropertyName = "DcsID";
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DcsID.DefaultCellStyle = dataGridViewCellStyle49;
+            this.DcsID.HeaderText = "Export ID";
+            this.DcsID.Name = "DcsID";
+            this.DcsID.ToolTipText = "DCS ID from Clickabledata";
+            this.DcsID.Width = 45;
             // 
             // DiviceID
             // 
             this.DiviceID.DataPropertyName = "DeviceID";
             this.DiviceID.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DiviceID.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DiviceID.DefaultCellStyle = dataGridViewCellStyle50;
             this.DiviceID.DisplayMember = "Devices.DeviceID";
             this.DiviceID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DiviceID.HeaderText = "Device ID";
@@ -3209,8 +3401,8 @@
             // clickableButton
             // 
             this.clickableButton.DataPropertyName = "ButtonID";
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.clickableButton.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.clickableButton.DefaultCellStyle = dataGridViewCellStyle51;
             this.clickableButton.HeaderText = "Button ID";
             this.clickableButton.Name = "clickableButton";
             this.clickableButton.ToolTipText = "Button ID from clickabledata.lua";
@@ -3221,7 +3413,7 @@
             this.Discription.DataPropertyName = "Discription";
             this.Discription.HeaderText = "Discription";
             this.Discription.Name = "Discription";
-            this.Discription.Width = 175;
+            this.Discription.Width = 145;
             // 
             // TypeClickable
             // 
@@ -3236,21 +3428,26 @@
             this.TypeClickable.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.TypeClickable.Width = 70;
             // 
-            // label3
+            // iDDataGridViewTextBoxColumn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(623, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 13);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Arcazes found\r\n";
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dcsIDDataGridViewTextBoxColumn
+            // 
+            this.dcsIDDataGridViewTextBoxColumn.DataPropertyName = "DcsID";
+            this.dcsIDDataGridViewTextBoxColumn.HeaderText = "DcsID";
+            this.dcsIDDataGridViewTextBoxColumn.Name = "dcsIDDataGridViewTextBoxColumn";
+            this.dcsIDDataGridViewTextBoxColumn.Visible = false;
             // 
             // dataGridViewArcaze
             // 
             this.dataGridViewArcaze.AllowUserToAddRows = false;
-            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewArcaze.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewArcaze.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridViewArcaze.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewArcaze.AutoGenerateColumns = false;
@@ -3258,64 +3455,50 @@
             this.dataGridViewArcaze.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewArcaze.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.arcazeNameArcazes,
-            this.ModulTypID,
             this.ActiveArcazes});
             this.dataGridViewArcaze.DataMember = "Arcaze";
             this.dataGridViewArcaze.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArcaze.DefaultCellStyle = dataGridViewCellStyle59;
-            this.dataGridViewArcaze.Location = new System.Drawing.Point(630, 29);
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArcaze.DefaultCellStyle = dataGridViewCellStyle55;
+            this.dataGridViewArcaze.Location = new System.Drawing.Point(614, 13);
             this.dataGridViewArcaze.Name = "dataGridViewArcaze";
             this.dataGridViewArcaze.RowHeadersWidth = 25;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewArcaze.RowsDefaultCellStyle = dataGridViewCellStyle60;
-            this.dataGridViewArcaze.Size = new System.Drawing.Size(392, 106);
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewArcaze.RowsDefaultCellStyle = dataGridViewCellStyle56;
+            this.dataGridViewArcaze.Size = new System.Drawing.Size(287, 120);
             this.dataGridViewArcaze.TabIndex = 201;
             this.dataGridViewArcaze.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewArcaze_DataError);
             // 
             // arcazeNameArcazes
             // 
             this.arcazeNameArcazes.DataPropertyName = "Arcaze";
-            this.arcazeNameArcazes.HeaderText = "Arcaze";
+            this.arcazeNameArcazes.HeaderText = "Arcaze found";
             this.arcazeNameArcazes.Name = "arcazeNameArcazes";
             this.arcazeNameArcazes.Width = 200;
-            // 
-            // ModulTypID
-            // 
-            this.ModulTypID.DataPropertyName = "ModulTypID";
-            this.ModulTypID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ModulTypID.HeaderText = "ModulType";
-            this.ModulTypID.Items.AddRange(new object[] {
-            "Display-Driver",
-            "LED-Driver 2",
-            "LED-Driver 3",
-            "Arcaze USB"});
-            this.ModulTypID.Name = "ModulTypID";
-            this.ModulTypID.ToolTipText = "Found type in Display or LEDs tab";
-            this.ModulTypID.Width = 105;
             // 
             // ActiveArcazes
             // 
             this.ActiveArcazes.DataPropertyName = "Active";
-            this.ActiveArcazes.HeaderText = "Active";
+            this.ActiveArcazes.HeaderText = "A";
             this.ActiveArcazes.Name = "ActiveArcazes";
             this.ActiveArcazes.ReadOnly = true;
             this.ActiveArcazes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ActiveArcazes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ActiveArcazes.Width = 45;
+            this.ActiveArcazes.ToolTipText = "Active";
+            this.ActiveArcazes.Width = 25;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(348, 13);
+            this.label2.Location = new System.Drawing.Point(355, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 13);
             this.label2.TabIndex = 38;
@@ -3332,10 +3515,10 @@
             // 
             // dataGridViewExportID
             // 
-            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewExportID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewExportID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle57;
             this.dataGridViewExportID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridViewExportID.AutoGenerateColumns = false;
@@ -3348,29 +3531,29 @@
             this.TypeDCSID});
             this.dataGridViewExportID.DataMember = "DCS_ID";
             this.dataGridViewExportID.DataSource = this.dataSetDisplaysLEDs;
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewExportID.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewExportID.DefaultCellStyle = dataGridViewCellStyle59;
             this.dataGridViewExportID.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewExportID.Location = new System.Drawing.Point(0, 29);
             this.dataGridViewExportID.Name = "dataGridViewExportID";
             this.dataGridViewExportID.RowHeadersWidth = 25;
-            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewExportID.RowsDefaultCellStyle = dataGridViewCellStyle64;
-            this.dataGridViewExportID.Size = new System.Drawing.Size(349, 507);
+            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewExportID.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            this.dataGridViewExportID.Size = new System.Drawing.Size(349, 597);
             this.dataGridViewExportID.TabIndex = 200;
             this.dataGridViewExportID.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewExportID_CellEndEdit);
             // 
             // DCSexportIDDCS
             // 
             this.DCSexportIDDCS.DataPropertyName = "ExportID";
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DCSexportIDDCS.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DCSexportIDDCS.DefaultCellStyle = dataGridViewCellStyle58;
             this.DCSexportIDDCS.HeaderText = "Export ID";
             this.DCSexportIDDCS.Name = "DCSexportIDDCS";
             this.DCSexportIDDCS.ToolTipText = "Export ID from DCS moduls";
@@ -3411,7 +3594,7 @@
             this.Config.Controls.Add(this.groupBox4);
             this.Config.Location = new System.Drawing.Point(4, 22);
             this.Config.Name = "Config";
-            this.Config.Size = new System.Drawing.Size(1027, 539);
+            this.Config.Size = new System.Drawing.Size(1027, 629);
             this.Config.TabIndex = 5;
             this.Config.Text = "Configuration";
             // 
@@ -3479,7 +3662,7 @@
             this.buttonConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConfig.Location = new System.Drawing.Point(940, 513);
+            this.buttonConfig.Location = new System.Drawing.Point(940, 564);
             this.buttonConfig.Name = "buttonConfig";
             this.buttonConfig.Size = new System.Drawing.Size(82, 23);
             this.buttonConfig.TabIndex = 51;
@@ -3597,20 +3780,17 @@
             // checkBoxWriteLogsToHD
             // 
             this.checkBoxWriteLogsToHD.AutoSize = true;
-            this.checkBoxWriteLogsToHD.Checked = true;
-            this.checkBoxWriteLogsToHD.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxWriteLogsToHD.Location = new System.Drawing.Point(547, 58);
             this.checkBoxWriteLogsToHD.Name = "checkBoxWriteLogsToHD";
             this.checkBoxWriteLogsToHD.Size = new System.Drawing.Size(119, 17);
             this.checkBoxWriteLogsToHD.TabIndex = 46;
             this.checkBoxWriteLogsToHD.Text = "Write logs to HD";
             this.checkBoxWriteLogsToHD.UseVisualStyleBackColor = true;
+            this.checkBoxWriteLogsToHD.Visible = false;
             // 
             // checkBoxLog
             // 
             this.checkBoxLog.AutoSize = true;
-            this.checkBoxLog.Checked = true;
-            this.checkBoxLog.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxLog.Cursor = System.Windows.Forms.Cursors.Default;
             this.checkBoxLog.Location = new System.Drawing.Point(672, 58);
             this.checkBoxLog.Name = "checkBoxLog";
@@ -3618,6 +3798,7 @@
             this.checkBoxLog.TabIndex = 47;
             this.checkBoxLog.Text = "log all actions";
             this.checkBoxLog.UseVisualStyleBackColor = true;
+            this.checkBoxLog.CheckedChanged += new System.EventHandler(this.CheckBoxLog_CheckedChanged);
             // 
             // label27
             // 
@@ -3654,7 +3835,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(3, 182);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(112, 13);
+            this.label21.Size = new System.Drawing.Size(111, 13);
             this.label21.TabIndex = 37;
             this.label21.Text = "Test data package";
             // 
@@ -3716,7 +3897,7 @@
             this.Debug.Controls.Add(this.groupBoxArcazeTest);
             this.Debug.Location = new System.Drawing.Point(4, 22);
             this.Debug.Name = "Debug";
-            this.Debug.Size = new System.Drawing.Size(1027, 539);
+            this.Debug.Size = new System.Drawing.Size(1027, 629);
             this.Debug.TabIndex = 7;
             this.Debug.Text = "Test";
             // 
@@ -4250,7 +4431,7 @@
             this.labelTestValue.AutoSize = true;
             this.labelTestValue.Location = new System.Drawing.Point(183, 47);
             this.labelTestValue.Name = "labelTestValue";
-            this.labelTestValue.Size = new System.Drawing.Size(39, 13);
+            this.labelTestValue.Size = new System.Drawing.Size(38, 13);
             this.labelTestValue.TabIndex = 50;
             this.labelTestValue.Text = "Value";
             // 
@@ -4324,7 +4505,7 @@
             this.labelTestLEDValue.AutoSize = true;
             this.labelTestLEDValue.Location = new System.Drawing.Point(183, 47);
             this.labelTestLEDValue.Name = "labelTestLEDValue";
-            this.labelTestLEDValue.Size = new System.Drawing.Size(39, 13);
+            this.labelTestLEDValue.Size = new System.Drawing.Size(38, 13);
             this.labelTestLEDValue.TabIndex = 40;
             this.labelTestLEDValue.Text = "Value";
             this.labelTestLEDValue.Visible = false;
@@ -4350,7 +4531,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(316, 47);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 13);
+            this.label7.Size = new System.Drawing.Size(73, 13);
             this.label7.TabIndex = 35;
             this.label7.Text = "ModuleType";
             // 
@@ -4575,7 +4756,7 @@
             this.Experimental.Controls.Add(this.dataGridViewSendKey);
             this.Experimental.Location = new System.Drawing.Point(4, 22);
             this.Experimental.Name = "Experimental";
-            this.Experimental.Size = new System.Drawing.Size(1027, 539);
+            this.Experimental.Size = new System.Drawing.Size(1027, 629);
             this.Experimental.TabIndex = 10;
             this.Experimental.Text = "Experimental";
             // 
@@ -4612,9 +4793,9 @@
             // 
             // dataGridViewJoystick
             // 
-            dataGridViewCellStyle65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewJoystick.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewJoystick.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
             this.dataGridViewJoystick.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -4631,20 +4812,20 @@
             this.discriptionDataGridViewTextBoxColumn1});
             this.dataGridViewJoystick.DataMember = "SendKeysFromJoystick";
             this.dataGridViewJoystick.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle69.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle69.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewJoystick.DefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle65.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewJoystick.DefaultCellStyle = dataGridViewCellStyle65;
             this.dataGridViewJoystick.Location = new System.Drawing.Point(0, 305);
             this.dataGridViewJoystick.Name = "dataGridViewJoystick";
             this.dataGridViewJoystick.RowHeadersWidth = 26;
-            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewJoystick.RowsDefaultCellStyle = dataGridViewCellStyle70;
-            this.dataGridViewJoystick.Size = new System.Drawing.Size(999, 234);
+            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewJoystick.RowsDefaultCellStyle = dataGridViewCellStyle66;
+            this.dataGridViewJoystick.Size = new System.Drawing.Size(999, 321);
             this.dataGridViewJoystick.TabIndex = 7;
             this.dataGridViewJoystick.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewJoystick_DataError);
             // 
@@ -4673,8 +4854,8 @@
             // joystickbuttonDataGridViewTextBoxColumn
             // 
             this.joystickbuttonDataGridViewTextBoxColumn.DataPropertyName = "Joystickbutton";
-            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.joystickbuttonDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.joystickbuttonDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle62;
             this.joystickbuttonDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.joystickbuttonDataGridViewTextBoxColumn.HeaderText = "Button";
             this.joystickbuttonDataGridViewTextBoxColumn.Items.AddRange(new object[] {
@@ -4727,8 +4908,8 @@
             // 
             this.dataGridViewComboBoxColumn1.DataPropertyName = "OptionKey";
             this.dataGridViewComboBoxColumn1.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle63;
             this.dataGridViewComboBoxColumn1.DisplayMember = "VirtualOptionKeys.Key";
             this.dataGridViewComboBoxColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dataGridViewComboBoxColumn1.HeaderText = "OptionKey";
@@ -4741,8 +4922,8 @@
             // 
             this.keystrokesDataGridViewTextBoxColumn.DataPropertyName = "Keystrokes";
             this.keystrokesDataGridViewTextBoxColumn.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.keystrokesDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.keystrokesDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle64;
             this.keystrokesDataGridViewTextBoxColumn.DisplayMember = "VirtualKeys.Key";
             this.keystrokesDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keystrokesDataGridViewTextBoxColumn.HeaderText = "Key";
@@ -4760,9 +4941,9 @@
             // 
             // dataGridViewSendKey
             // 
-            dataGridViewCellStyle71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle71.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewSendKey.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle67.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewSendKey.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle67;
             this.dataGridViewSendKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewSendKey.AutoGenerateColumns = false;
@@ -4780,19 +4961,19 @@
             this.discriptionDataGridViewTextBoxColumn});
             this.dataGridViewSendKey.DataMember = "SendKeysTimeBased";
             this.dataGridViewSendKey.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle76.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle76.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSendKey.DefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSendKey.DefaultCellStyle = dataGridViewCellStyle72;
             this.dataGridViewSendKey.Location = new System.Drawing.Point(0, 55);
             this.dataGridViewSendKey.Name = "dataGridViewSendKey";
             this.dataGridViewSendKey.RowHeadersWidth = 26;
-            dataGridViewCellStyle77.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewSendKey.RowsDefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle73.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewSendKey.RowsDefaultCellStyle = dataGridViewCellStyle73;
             this.dataGridViewSendKey.Size = new System.Drawing.Size(999, 227);
             this.dataGridViewSendKey.TabIndex = 5;
             // 
@@ -4839,8 +5020,8 @@
             // OptionKey
             // 
             this.OptionKey.DataPropertyName = "OptionKey";
-            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.OptionKey.DefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.OptionKey.DefaultCellStyle = dataGridViewCellStyle68;
             this.OptionKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OptionKey.HeaderText = "OptionKey";
             this.OptionKey.Name = "OptionKey";
@@ -4852,8 +5033,8 @@
             // 
             this.keystrokesDataGridViewTextBoxColumn1.DataPropertyName = "Keystrokes";
             this.keystrokesDataGridViewTextBoxColumn1.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.keystrokesDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.keystrokesDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle69;
             this.keystrokesDataGridViewTextBoxColumn1.DisplayMember = "VirtualKeys.Key";
             this.keystrokesDataGridViewTextBoxColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keystrokesDataGridViewTextBoxColumn1.HeaderText = "Key";
@@ -4865,8 +5046,8 @@
             // delayDataGridViewTextBoxColumn
             // 
             this.delayDataGridViewTextBoxColumn.DataPropertyName = "Delay";
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.delayDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.delayDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle70;
             this.delayDataGridViewTextBoxColumn.HeaderText = "Delay [s]";
             this.delayDataGridViewTextBoxColumn.Name = "delayDataGridViewTextBoxColumn";
             this.delayDataGridViewTextBoxColumn.Width = 85;
@@ -4874,8 +5055,8 @@
             // valueDataGridViewTextBoxColumn
             // 
             this.valueDataGridViewTextBoxColumn.DataPropertyName = "Value";
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.valueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.valueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle71;
             this.valueDataGridViewTextBoxColumn.HeaderText = "Value [s]";
             this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
             this.valueDataGridViewTextBoxColumn.Width = 85;
@@ -4896,7 +5077,7 @@
             this.Log.Controls.Add(this.listBox1);
             this.Log.Location = new System.Drawing.Point(4, 22);
             this.Log.Name = "Log";
-            this.Log.Size = new System.Drawing.Size(1027, 539);
+            this.Log.Size = new System.Drawing.Size(1027, 629);
             this.Log.TabIndex = 3;
             this.Log.Text = "Log";
             // 
@@ -4906,7 +5087,7 @@
             this.buttonLogClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonLogClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogClear.ForeColor = System.Drawing.Color.Gold;
-            this.buttonLogClear.Location = new System.Drawing.Point(854, 500);
+            this.buttonLogClear.Location = new System.Drawing.Point(854, 587);
             this.buttonLogClear.Name = "buttonLogClear";
             this.buttonLogClear.Size = new System.Drawing.Size(80, 36);
             this.buttonLogClear.TabIndex = 102;
@@ -4916,17 +5097,16 @@
             // 
             // listBox3
             // 
-            this.listBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.listBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox3.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.listBox3.ForeColor = System.Drawing.Color.Gold;
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 14;
-            this.listBox3.Location = new System.Drawing.Point(3, 522);
+            this.listBox3.Location = new System.Drawing.Point(3, 600);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(691, 14);
+            this.listBox3.Size = new System.Drawing.Size(845, 14);
             this.listBox3.TabIndex = 101;
             this.listBox3.Visible = false;
             // 
@@ -4937,7 +5117,7 @@
             this.btnCopyToClipboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCopyToClipboard.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.btnCopyToClipboard.ForeColor = System.Drawing.Color.Gold;
-            this.btnCopyToClipboard.Location = new System.Drawing.Point(940, 500);
+            this.btnCopyToClipboard.Location = new System.Drawing.Point(940, 587);
             this.btnCopyToClipboard.Name = "btnCopyToClipboard";
             this.btnCopyToClipboard.Size = new System.Drawing.Size(82, 36);
             this.btnCopyToClipboard.TabIndex = 100;
@@ -4959,7 +5139,7 @@
             this.listBox1.ItemHeight = 14;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1022, 490);
+            this.listBox1.Size = new System.Drawing.Size(1022, 574);
             this.listBox1.TabIndex = 20;
             this.listBox1.TabStop = false;
             // 
@@ -4970,19 +5150,19 @@
             this.Help.Controls.Add(this.listBoxHelp);
             this.Help.Location = new System.Drawing.Point(4, 22);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(1027, 539);
+            this.Help.Size = new System.Drawing.Size(1027, 629);
             this.Help.TabIndex = 8;
             this.Help.Text = "Help";
             // 
             // buttonDonate
             // 
-            this.buttonDonate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDonate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDonate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonDonate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDonate.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDonate.Image = global::DAC.Properties.Resources.btn_donateCC_LG;
-            this.buttonDonate.Location = new System.Drawing.Point(842, 17);
+            this.buttonDonate.Location = new System.Drawing.Point(854, 3);
             this.buttonDonate.Name = "buttonDonate";
             this.buttonDonate.Size = new System.Drawing.Size(141, 65);
             this.buttonDonate.TabIndex = 5;
@@ -4991,9 +5171,7 @@
             // 
             // listBoxHelp
             // 
-            this.listBoxHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.listBoxHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBoxHelp.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5004,15 +5182,16 @@
             "\t\t\t",
             "\t\t\tColumn token:",
             "\t\t\t---------------------------------------------------------------------------",
-            "\t\t\tA  = Active",
-            "\t\t\tI  = Init   (not changeable)",
-            "\t\t\tR  = Reverse",
-            "\t\t\tS  = Send not zero values (useful for rotary switches and pushbuttons)",
-            "\t\t\tT  = Test",
-            "\t\t\tLP = Left padding",
-            "\t\t\tdM = dimming mode: 0 == off",
-            "\t\t\tdT = dimming time interval [sec.]",
-            "\t\t\tdV = dimming value",
+            "\t\t\tA   = Active",
+            "\t\t\tI   = Init   (not changeable)",
+            "\t\t\tR   = Reverse",
+            "\t\t\tS   = Send not zero values (useful for rotary switches and pushbuttons)",
+            "\t\t\tT   = Test",
+            "\t\t\tLP  = Left padding",
+            "\t\t\tdM  = dimming mode: 0 == off",
+            "\t\t\tdT  = dimming time interval [sec.]",
+            "\t\t\tdV  = dimming value",
+            "\t\t\tMax = max value (range 0.0 - 1.0 only LED driver 3)",
             "\t\t\t",
             "\t\t\tFor rotary switches, please check R and S for all positions.",
             "\t\t\t",
@@ -5088,7 +5267,7 @@
             "\t\t\t"});
             this.listBoxHelp.Location = new System.Drawing.Point(0, 0);
             this.listBoxHelp.Name = "listBoxHelp";
-            this.listBoxHelp.Size = new System.Drawing.Size(1024, 532);
+            this.listBoxHelp.Size = new System.Drawing.Size(1024, 658);
             this.listBoxHelp.TabIndex = 0;
             // 
             // Info
@@ -5097,7 +5276,7 @@
             this.Info.Controls.Add(this.listBoxVersion);
             this.Info.Location = new System.Drawing.Point(4, 22);
             this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(1027, 539);
+            this.Info.Size = new System.Drawing.Size(1027, 629);
             this.Info.TabIndex = 9;
             this.Info.Text = "Version";
             // 
@@ -5332,24 +5511,47 @@
                 "                            11.08.2015",
             "\t\t0.985    Bugfix Encoders.                                                      " +
                 "                            25.08.2015",
-            "\t\t0.986    Rename Tab \'LEDs\' to \'LEDs / Lamps\'                                   " +
+            "\t\t0.986    Rename Tab \'LEDs / Lamps\' to \'LEDs\'                                   " +
                 "                            26.08.2015",
+            "\t\t0.987    Added field \'Max\' in Tab \'LEDs\' for LED - Driver 3                    " +
+                "                            12.09.2015",
+            "\t\t0.988    Optimize layout; added record count; The whole communication is done n" +
+                "ow with the serial",
+            "\t\t         number.                                                               " +
+                "                            25.09.2015",
+            "\t\t0.989    Bug fixes.                                                            " +
+                "                            01.10.2015",
+            "\t\t0.992    UDP-Stack optimizing                                                  " +
+                "                            06.01.2016",
             "\t\t-------------------------------------------------------------------------------" +
                 "--------------------------------------"});
             this.listBoxVersion.Location = new System.Drawing.Point(0, 0);
             this.listBoxVersion.Name = "listBoxVersion";
-            this.listBoxVersion.Size = new System.Drawing.Size(1027, 532);
+            this.listBoxVersion.Size = new System.Drawing.Size(1027, 630);
             this.listBoxVersion.TabIndex = 0;
             // 
             // Copyright
             // 
             this.Copyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Copyright.Controls.Add(this.pictureBox1);
             this.Copyright.Controls.Add(this.listBoxCopyright);
             this.Copyright.Location = new System.Drawing.Point(4, 22);
             this.Copyright.Name = "Copyright";
-            this.Copyright.Size = new System.Drawing.Size(1027, 539);
+            this.Copyright.Size = new System.Drawing.Size(1027, 629);
             this.Copyright.TabIndex = 14;
             this.Copyright.Text = "Copyright";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.ErrorImage = global::DAC.Properties.Resources.Logo_01;
+            this.pictureBox1.Image = global::DAC.Properties.Resources.Logo_01;
+            this.pictureBox1.Location = new System.Drawing.Point(55, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
             // 
             // listBoxCopyright
             // 
@@ -5363,59 +5565,62 @@
             this.listBoxCopyright.FormattingEnabled = true;
             this.listBoxCopyright.ItemHeight = 14;
             this.listBoxCopyright.Items.AddRange(new object[] {
+            "",
+            "",
+            "",
+            "",
             "\t\t\t",
-            "\t\t\t------------------------------------------------------------------------------" +
-                "------",
-            "\t\t\tD.A.C. DCS Arcaze Communicator  Version: 0.9 Beta",
-            "\t\t\t------------------------------------------------------------------------------" +
-                "------",
+            "\t\t\t\t-----------------------------------------------------------------------------" +
+                "-------",
+            "\t\t\t\tD.A.C. DCS Arcaze Communicator  Version: 0.9 Beta",
+            "\t\t\t\t-----------------------------------------------------------------------------" +
+                "-------",
             "\t",
-            "\t\t\tCopyright (c) 2014 Heinz-Joerg Puhlmann",
+            "\t\t\t\tCopyright (c) 2015 Heinz-Joerg Puhlmann",
             "    ",
-            "\t\t\tHiermit wird unentgeltlich, jeder Person, die eine Kopie der Software und der " +
-                "zuge- ",
-            "\t\t\thörigen Dokumentationen (die \"Software\") erhält, die Erlaubnis erteilt, uneing" +
-                "e- ",
-            "\t\t\tschränkt zu benutzen, inklusive und ohne Ausnahme, dem Recht, sie zu verwenden" +
-                ", ",
-            "\t\t\tkopieren, ändern, fusionieren, verlegen, verbreiten, unterlizenzieren und/oder" +
-                " zu ",
-            "\t\t\tverkaufen, und Personen, die diese Software erhalten, diese Rechte zu geben, u" +
-                "nter ",
-            "\t\t\tden folgenden Bedingungen:",
+            "\t\t\t\tHiermit wird unentgeltlich, jeder Person, die eine Kopie der Software und der" +
+                " zuge- ",
+            "\t\t\t\thörigen Dokumentationen (die \"Software\") erhält, die Erlaubnis erteilt, unein" +
+                "ge- ",
+            "\t\t\t\tschränkt zu benutzen, inklusive und ohne Ausnahme, dem Recht, sie zu verwende" +
+                "n, ",
+            "\t\t\t\tkopieren, ändern, fusionieren, verlegen, verbreiten, unterlizenzieren und/ode" +
+                "r zu ",
+            "\t\t\t\tverkaufen, und Personen, die diese Software erhalten, diese Rechte zu geben, " +
+                "unter ",
+            "\t\t\t\tden folgenden Bedingungen:",
             "    ",
-            "\t\t\tDer obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in alle Kopien" +
-                " ",
-            "\t\t\toder Teilkopien der Software beizulegen.",
+            "\t\t\t\tDer obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in alle Kopie" +
+                "n ",
+            "\t\t\t\toder Teilkopien der Software beizulegen.",
             "    ",
-            "\t\t\tDIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGEST" +
-                "ELLT, ",
-            "\t\t\tEINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG FÜR DEN VORGESEHENEN ODER EINEM ",
-            "\t\t\tBESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG, JEDOCH NICHT DARAUF BESCHRÄ" +
-                "NKT. ",
-            "\t\t\tIN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHEN SCHADEN OD" +
-                "ER ",
-            "\t\t\tSONSTIGE ANSPRUCH HAFTBAR ZU MACHEN, OB INFOLGE DER ERFÜLLUNG VON EINEM VERTRA" +
-                "G, ",
-            "\t\t\tEINEM DELIKT ODER ANDERS IM ZUSAMMENHANG MIT DER BENUTZUNG ODER SONSTIGE VERWE" +
-                "NDUNG ",
-            "\t\t\tDER SOFTWARE ENTSTANDEN.",
+            "\t\t\t\tDIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGES" +
+                "TELLT, ",
+            "\t\t\t\tEINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG FÜR DEN VORGESEHENEN ODER EINEM ",
+            "\t\t\t\tBESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG, JEDOCH NICHT DARAUF BESCHR" +
+                "ÄNKT. ",
+            "\t\t\t\tIN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHEN SCHADEN O" +
+                "DER ",
+            "\t\t\t\tSONSTIGE ANSPRUCH HAFTBAR ZU MACHEN, OB INFOLGE DER ERFÜLLUNG VON EINEM VERTR" +
+                "AG, ",
+            "\t\t\t\tEINEM DELIKT ODER ANDERS IM ZUSAMMENHANG MIT DER BENUTZUNG ODER SONSTIGE VERW" +
+                "ENDUNG ",
+            "\t\t\t\tDER SOFTWARE ENTSTANDEN.",
             "\t",
-            "\t\t\t------------------------------------------------------------------------------" +
-                "------",
-            "\t\t\tContact: heinz.joerg.puhlmann@googlemail.com",
+            "\t\t\t\t-----------------------------------------------------------------------------" +
+                "-------",
+            "\t\t\t\tContact: heinz.joerg.puhlmann@googlemail.com",
             "\t",
-            "\t\t\tCredits: - McMicha for beta testing and exchanging ideas. He is responsible fo" +
-                "r ",
-            "\t\t\t           many inspirations and for the development of this nice export.lua s" +
-                "cript.",
+            "\t\t\t\tCredits: - McMicha for beta testing and exchanging ideas. He is responsible f" +
+                "or ",
+            "\t\t\t\t\t many inspirations and for the development of this nice export.lua script.",
             "\t\t\t\t\t ",
-            "\t\t\t         - Tomcat for beta testing with his large/complex cockpit.",
-            "\t\t\t------------------------------------------------------------------------------" +
-                "------"});
+            "\t\t\t\t\t - Tomcat for beta testing with his large/complex cockpit.",
+            "\t\t\t\t-----------------------------------------------------------------------------" +
+                "-------"});
             this.listBoxCopyright.Location = new System.Drawing.Point(0, 5);
             this.listBoxCopyright.Name = "listBoxCopyright";
-            this.listBoxCopyright.Size = new System.Drawing.Size(1031, 532);
+            this.listBoxCopyright.Size = new System.Drawing.Size(1031, 616);
             this.listBoxCopyright.TabIndex = 1;
             // 
             // openFileDialog1
@@ -5428,7 +5633,7 @@
             this.buttonOpenFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenFile.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOpenFile.Location = new System.Drawing.Point(856, 583);
+            this.buttonOpenFile.Location = new System.Drawing.Point(856, 662);
             this.buttonOpenFile.Name = "buttonOpenFile";
             this.buttonOpenFile.Size = new System.Drawing.Size(80, 23);
             this.buttonOpenFile.TabIndex = 4;
@@ -5442,7 +5647,7 @@
             this.buttonSaveToFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonSaveToFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSaveToFile.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSaveToFile.Location = new System.Drawing.Point(942, 583);
+            this.buttonSaveToFile.Location = new System.Drawing.Point(942, 662);
             this.buttonSaveToFile.Name = "buttonSaveToFile";
             this.buttonSaveToFile.Size = new System.Drawing.Size(82, 23);
             this.buttonSaveToFile.TabIndex = 5;
@@ -5460,11 +5665,11 @@
             this.labelVersion.AutoSize = true;
             this.labelVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.labelVersion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(442, 589);
+            this.labelVersion.Location = new System.Drawing.Point(401, 668);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(116, 13);
+            this.labelVersion.Size = new System.Drawing.Size(181, 13);
             this.labelVersion.TabIndex = 57;
-            this.labelVersion.Text = "Version 0.986 Beta";
+            this.labelVersion.Text = "(C) H.J.P. 2017 Version 0.997d";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonReset
@@ -5472,7 +5677,7 @@
             this.buttonReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReset.Location = new System.Drawing.Point(757, 583);
+            this.buttonReset.Location = new System.Drawing.Point(757, 662);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(80, 23);
             this.buttonReset.TabIndex = 3;
@@ -5485,13 +5690,13 @@
             // 
             this.labelPleaseWait.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPleaseWait.AutoSize = true;
-            this.labelPleaseWait.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPleaseWait.ForeColor = System.Drawing.Color.Yellow;
-            this.labelPleaseWait.Location = new System.Drawing.Point(113, 584);
+            this.labelPleaseWait.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPleaseWait.ForeColor = System.Drawing.Color.OrangeRed;
+            this.labelPleaseWait.Location = new System.Drawing.Point(98, 664);
             this.labelPleaseWait.Name = "labelPleaseWait";
             this.labelPleaseWait.Size = new System.Drawing.Size(20, 18);
             this.labelPleaseWait.TabIndex = 58;
-            this.labelPleaseWait.Text = "T";
+            this.labelPleaseWait.Text = "  ";
             this.labelPleaseWait.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonStop
@@ -5501,7 +5706,7 @@
             this.buttonStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStop.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStop.ForeColor = System.Drawing.Color.Red;
-            this.buttonStop.Location = new System.Drawing.Point(12, 583);
+            this.buttonStop.Location = new System.Drawing.Point(12, 662);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(80, 23);
             this.buttonStop.TabIndex = 1;
@@ -5525,7 +5730,7 @@
             this.buttonInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInit.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInit.Location = new System.Drawing.Point(770, 583);
+            this.buttonInit.Location = new System.Drawing.Point(770, 662);
             this.buttonInit.Name = "buttonInit";
             this.buttonInit.Size = new System.Drawing.Size(80, 23);
             this.buttonInit.TabIndex = 2;
@@ -5580,8 +5785,8 @@
             // portSwitches
             // 
             this.portSwitches.DataPropertyName = "Port";
-            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.portSwitches.DefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.portSwitches.DefaultCellStyle = dataGridViewCellStyle74;
             this.portSwitches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.portSwitches.HeaderText = "Connector";
             this.portSwitches.Items.AddRange(new object[] {
@@ -5596,8 +5801,8 @@
             // pinSwitches
             // 
             this.pinSwitches.DataPropertyName = "Pin";
-            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.pinSwitches.DefaultCellStyle = dataGridViewCellStyle79;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.pinSwitches.DefaultCellStyle = dataGridViewCellStyle75;
             this.pinSwitches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pinSwitches.HeaderText = "Pin";
             this.pinSwitches.Items.AddRange(new object[] {
@@ -5643,8 +5848,8 @@
             // swichChannel
             // 
             this.swichChannel.DataPropertyName = "Channel";
-            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.swichChannel.DefaultCellStyle = dataGridViewCellStyle80;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.swichChannel.DefaultCellStyle = dataGridViewCellStyle76;
             this.swichChannel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.swichChannel.HeaderText = "Channel";
             this.swichChannel.Items.AddRange(new object[] {
@@ -5663,8 +5868,8 @@
             // ValueSwitches
             // 
             this.ValueSwitches.DataPropertyName = "ValueDez";
-            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ValueSwitches.DefaultCellStyle = dataGridViewCellStyle81;
+            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ValueSwitches.DefaultCellStyle = dataGridViewCellStyle77;
             this.ValueSwitches.HeaderText = "Value Read";
             this.ValueSwitches.Name = "ValueSwitches";
             this.ValueSwitches.ReadOnly = true;
@@ -5676,7 +5881,8 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.label23.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(584, 589);
+            this.label23.ForeColor = System.Drawing.Color.Gold;
+            this.label23.Location = new System.Drawing.Point(584, 668);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(83, 13);
             this.label23.TabIndex = 58;
@@ -5690,7 +5896,7 @@
             this.textBoxInputChanged.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxInputChanged.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxInputChanged.ForeColor = System.Drawing.Color.Gold;
-            this.textBoxInputChanged.Location = new System.Drawing.Point(673, 584);
+            this.textBoxInputChanged.Location = new System.Drawing.Point(673, 663);
             this.textBoxInputChanged.Name = "textBoxInputChanged";
             this.textBoxInputChanged.ReadOnly = true;
             this.textBoxInputChanged.Size = new System.Drawing.Size(40, 20);
@@ -5717,179 +5923,54 @@
             this.InitADC.ToolTipText = "Init";
             this.InitADC.Width = 20;
             // 
-            // keystrokesActive
+            // labelCount
             // 
-            this.keystrokesActive.DataPropertyName = "Active";
-            this.keystrokesActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesActive.HeaderText = "A";
-            this.keystrokesActive.Name = "keystrokesActive";
-            this.keystrokesActive.ToolTipText = "Active";
-            this.keystrokesActive.Width = 20;
+            this.labelCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelCount.AutoSize = true;
+            this.labelCount.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCount.ForeColor = System.Drawing.Color.Gold;
+            this.labelCount.Location = new System.Drawing.Point(346, 666);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(18, 16);
+            this.labelCount.TabIndex = 60;
+            this.labelCount.Text = "  ";
+            this.labelCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // keystrokesInit
+            // EncoderID
             // 
-            this.keystrokesInit.DataPropertyName = "Init";
-            this.keystrokesInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesInit.HeaderText = "I";
-            this.keystrokesInit.Name = "keystrokesInit";
-            this.keystrokesInit.ReadOnly = true;
-            this.keystrokesInit.ToolTipText = "Init (not changeable)";
-            this.keystrokesInit.Width = 20;
+            this.EncoderID.DataPropertyName = "Id";
+            this.EncoderID.HeaderText = "Id";
+            this.EncoderID.Name = "EncoderID";
+            this.EncoderID.Visible = false;
             // 
-            // keystrokesReverse
+            // ActiveEncoder
             // 
-            this.keystrokesReverse.DataPropertyName = "Reverse";
-            this.keystrokesReverse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesReverse.HeaderText = "R";
-            this.keystrokesReverse.Name = "keystrokesReverse";
-            this.keystrokesReverse.ToolTipText = "Reverse logic";
-            this.keystrokesReverse.Width = 20;
+            this.ActiveEncoder.DataPropertyName = "Active";
+            this.ActiveEncoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ActiveEncoder.HeaderText = "A";
+            this.ActiveEncoder.Name = "ActiveEncoder";
+            this.ActiveEncoder.ToolTipText = "Active";
+            this.ActiveEncoder.Width = 20;
             // 
-            // SendNotOff
+            // InitEncoder
             // 
-            this.SendNotOff.DataPropertyName = "SendNotOff";
-            this.SendNotOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SendNotOff.HeaderText = "S";
-            this.SendNotOff.Name = "SendNotOff";
-            this.SendNotOff.Width = 20;
-            // 
-            // keystrokesArcaze
-            // 
-            this.keystrokesArcaze.DataPropertyName = "Arcaze";
-            this.keystrokesArcaze.DataSource = this.dataSetDisplaysLEDs;
-            this.keystrokesArcaze.DisplayMember = "Arcaze.Arcaze";
-            this.keystrokesArcaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesArcaze.HeaderText = "Arcaze";
-            this.keystrokesArcaze.Name = "keystrokesArcaze";
-            this.keystrokesArcaze.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.keystrokesArcaze.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.keystrokesArcaze.ValueMember = "Arcaze.Arcaze";
-            this.keystrokesArcaze.Width = 205;
-            // 
-            // keystrokesPort
-            // 
-            this.keystrokesPort.DataPropertyName = "Port";
-            this.keystrokesPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesPort.HeaderText = "Port";
-            this.keystrokesPort.Items.AddRange(new object[] {
-            "Port A",
-            "Port B"});
-            this.keystrokesPort.Name = "keystrokesPort";
-            this.keystrokesPort.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.keystrokesPort.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.keystrokesPort.Width = 65;
-            // 
-            // keystrokesPin
-            // 
-            this.keystrokesPin.DataPropertyName = "Pin";
-            this.keystrokesPin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keystrokesPin.HeaderText = "Pin";
-            this.keystrokesPin.Items.AddRange(new object[] {
-            "Pin-1",
-            "Pin-2",
-            "Pin-3",
-            "Pin-4",
-            "Pin-5",
-            "Pin-6",
-            "Pin-7",
-            "Pin-8",
-            "Pin-9",
-            "Pin-10",
-            "Pin-11",
-            "Pin-12",
-            "Pin-13",
-            "Pin-14",
-            "Pin-15",
-            "Pin-16",
-            "Pin-17",
-            "Pin-18",
-            "Pin-19",
-            "Pin-20"});
-            this.keystrokesPin.Name = "keystrokesPin";
-            this.keystrokesPin.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.keystrokesPin.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.keystrokesPin.Width = 65;
-            // 
-            // ValueRead
-            // 
-            this.ValueRead.DataPropertyName = "ValueRead";
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ValueRead.DefaultCellStyle = dataGridViewCellStyle42;
-            this.ValueRead.HeaderText = "Value Read";
-            this.ValueRead.Name = "ValueRead";
-            this.ValueRead.ReadOnly = true;
-            this.ValueRead.Width = 45;
-            // 
-            // OptionKeyOne
-            // 
-            this.OptionKeyOne.DataPropertyName = "OptionKeyOne";
-            this.OptionKeyOne.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.OptionKeyOne.DefaultCellStyle = dataGridViewCellStyle43;
-            this.OptionKeyOne.DisplayMember = "VirtualOptionKeys.Key";
-            this.OptionKeyOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OptionKeyOne.HeaderText = "Option Key One";
-            this.OptionKeyOne.Name = "OptionKeyOne";
-            this.OptionKeyOne.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OptionKeyOne.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.OptionKeyOne.ValueMember = "VirtualOptionKeys.KeyCode";
-            // 
-            // OptionKeyTwo
-            // 
-            this.OptionKeyTwo.DataPropertyName = "OptionKeyTwo";
-            this.OptionKeyTwo.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.OptionKeyTwo.DefaultCellStyle = dataGridViewCellStyle44;
-            this.OptionKeyTwo.DisplayMember = "VirtualOptionKeys.Key";
-            this.OptionKeyTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OptionKeyTwo.HeaderText = "Option Key Two";
-            this.OptionKeyTwo.Name = "OptionKeyTwo";
-            this.OptionKeyTwo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OptionKeyTwo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.OptionKeyTwo.ValueMember = "VirtualOptionKeys.KeyCode";
-            // 
-            // Key
-            // 
-            this.Key.DataPropertyName = "Keystrokes";
-            this.Key.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Key.DefaultCellStyle = dataGridViewCellStyle45;
-            this.Key.DisplayMember = "VirtualKeys.Key";
-            this.Key.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Key.HeaderText = "Key";
-            this.Key.Name = "Key";
-            this.Key.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Key.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Key.ValueMember = "VirtualKeys.KeyCode";
-            // 
-            // KeystrokesOff
-            // 
-            this.KeystrokesOff.DataPropertyName = "KeystrokesOff";
-            this.KeystrokesOff.DataSource = this.dataSetConfig;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.KeystrokesOff.DefaultCellStyle = dataGridViewCellStyle46;
-            this.KeystrokesOff.DisplayMember = "VirtualKeys.Key";
-            this.KeystrokesOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KeystrokesOff.HeaderText = "Key Pin Off";
-            this.KeystrokesOff.Name = "KeystrokesOff";
-            this.KeystrokesOff.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.KeystrokesOff.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.KeystrokesOff.ValueMember = "VirtualKeys.KeyCode";
-            this.KeystrokesOff.Visible = false;
-            // 
-            // ProzessName
-            // 
-            this.ProzessName.DataPropertyName = "ProzessName";
-            this.ProzessName.HeaderText = "Prozess name";
-            this.ProzessName.Name = "ProzessName";
-            this.ProzessName.Width = 115;
+            this.InitEncoder.DataPropertyName = "Init";
+            this.InitEncoder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InitEncoder.HeaderText = "I";
+            this.InitEncoder.Name = "InitEncoder";
+            this.InitEncoder.ReadOnly = true;
+            this.InitEncoder.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.InitEncoder.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.InitEncoder.ToolTipText = "Init (not changeable)";
+            this.InitEncoder.Width = 20;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1036, 611);
+            this.ClientSize = new System.Drawing.Size(1036, 690);
+            this.Controls.Add(this.labelCount);
             this.Controls.Add(this.textBoxInputChanged);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.buttonInit);
@@ -5907,6 +5988,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "D.A.C. - DCS Arcaze Communicator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControl1.ResumeLayout(false);
             this.Displays.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDisplays)).EndInit();
@@ -5948,6 +6030,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTable8)).EndInit();
             this.ExportID.ResumeLayout(false);
             this.ExportID.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDevices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClickable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArcaze)).EndInit();
@@ -5991,6 +6074,7 @@
             this.Help.ResumeLayout(false);
             this.Info.ResumeLayout(false);
             this.Copyright.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6116,7 +6200,6 @@
         private System.Windows.Forms.GroupBox groupBoxOutputDisplay;
         private System.Windows.Forms.ListBox listBoxHelp;
         private System.Windows.Forms.TabPage ExportID;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridViewArcaze;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
@@ -6129,12 +6212,10 @@
         private System.Windows.Forms.CheckBox checkBoxLog;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.ListBox listBoxVersion;
-        private System.Data.DataColumn dataColumn4;
         private System.Windows.Forms.GroupBox groupBoxArcazeTest;
         private System.Windows.Forms.Button buttonSendTestPattern;
         private System.Windows.Forms.Label labelOnOff;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Data.DataColumn dataColumn16;
         private System.Windows.Forms.ComboBox comboBoxDevAddress;
         private System.Windows.Forms.ComboBox comboBoxLEDValue;
         private System.Windows.Forms.Button buttonPackage;
@@ -6336,21 +6417,11 @@
         private System.Data.DataColumn Target_ADC;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ActiveADC;
         private System.Windows.Forms.DataGridViewCheckBoxColumn InitADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn deviceIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn discriptionDataGridViewTextBoxColumn3;
         private System.Data.DataColumn dataColumn131;
         private System.Data.DataTable dataTable20;
         private System.Data.DataColumn dataColumn132;
         private System.Data.DataColumn dataColumn133;
-        private System.Windows.Forms.DataGridViewTextBoxColumn arcazeNameArcazes;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ModulTypID;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ActiveArcazes;
         private System.Data.DataColumn dataColumn134;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn DiviceID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clickableButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Discription;
-        private System.Windows.Forms.DataGridViewComboBoxColumn TypeClickable;
         private System.Windows.Forms.DataGridViewTextBoxColumn DCSexportIDDCS;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDCS;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExportIDWithDescriptionDCS;
@@ -6364,6 +6435,74 @@
         private System.Data.DataTable dataTable23;
         private System.Data.DataColumn dataColumn139;
         private System.Data.DataColumn dataColumn140;
+        private System.Data.DataColumn dataColumn141;
+        private System.Windows.Forms.Button buttonDonate;
+        private System.Data.DataColumn dataColumn142;
+        private System.Windows.Forms.Label labelCount;
+        private System.Data.DataColumn dataColumn143;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesActive;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesInit;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesReverse;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesSendNotOff;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesArcaze;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesClickableID;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesPort;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesPin;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesType;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchesChannel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValueOff;
+        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValueOn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ADCactive;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ArcazeADC;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ADCChannel;
+        private System.Windows.Forms.DataGridViewComboBoxColumn targetADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn minValueADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maxValueADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn readValueADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sendValueADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oldValueADC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EncoderID;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ActiveEncoder;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn InitEncoder;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn EveryValue;
+        private System.Windows.Forms.DataGridViewComboBoxColumn encoderIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn switchIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valueCalcSendEncoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesActive;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesInit;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesReverse;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn SendNotOff;
+        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesArcaze;
+        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesPort;
+        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesPin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValueRead;
+        private System.Windows.Forms.DataGridViewComboBoxColumn OptionKeyOne;
+        private System.Windows.Forms.DataGridViewComboBoxColumn OptionKeyTwo;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Key;
+        private System.Windows.Forms.DataGridViewComboBoxColumn KeystrokesOff;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProzessName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Encoder;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn active_Encoder;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn init_Encoders;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Reverse_Encoder;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn sendValue_Encoder;
+        private System.Windows.Forms.DataGridViewComboBoxColumn arcaze_Encoder;
+        private System.Windows.Forms.DataGridViewComboBoxColumn encoder_Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn minValue_Encoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maxValue_Encoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn calcValue_Encoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dentValue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn readValue_Encoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastReadValue_Encoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn arcazeAndEncoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oldValueEncoder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn arcazeNameArcazes;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ActiveArcazes;
+        private System.Data.DataColumn dataColumn4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn activeLEDs;
         private System.Windows.Forms.DataGridViewCheckBoxColumn checkBoxInit;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ledsReverse;
@@ -6379,20 +6518,8 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dimmMode;
         private System.Windows.Forms.DataGridViewComboBoxColumn dimmTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn dimmValue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LED_Max;
         private System.Windows.Forms.DataGridViewTextBoxColumn deviceIndex;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesActive;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesInit;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesReverse;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn switchesSendNotOff;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesArcaze;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesClickableID;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesPort;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesPin;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesType;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchesChannel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValueOff;
-        private System.Windows.Forms.DataGridViewTextBoxColumn switchesValueOn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn activeDisplaysCheckBox;
         private System.Windows.Forms.DataGridViewCheckBoxColumn displayInit;
         private System.Windows.Forms.DataGridViewCheckBoxColumn displayReverse;
@@ -6412,49 +6539,16 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn displayD0;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDDisplays;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Data.DataColumn dataColumn141;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EncoderID;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ActiveEncoder;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn InitEncoder;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ReverseEncoder;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Arcaze;
-        private System.Windows.Forms.DataGridViewComboBoxColumn EncoderNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MinValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaxValue;
-        private System.Windows.Forms.DataGridViewComboBoxColumn DentValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CalcValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReadValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ArcazeAndEncoder;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn SendValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OldValueEncoder;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn EveryValue;
-        private System.Windows.Forms.DataGridViewComboBoxColumn encoderIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn switchIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valueCalcSendEncoder;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ADCactive;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ArcazeADC;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ADCChannel;
-        private System.Windows.Forms.DataGridViewComboBoxColumn targetADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn minValueADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maxValueADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn readValueADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sendValueADC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldValueADC;
-        private System.Windows.Forms.Button buttonDonate;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesActive;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesInit;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn keystrokesReverse;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn SendNotOff;
-        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesArcaze;
-        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesPort;
-        private System.Windows.Forms.DataGridViewComboBoxColumn keystrokesPin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValueRead;
-        private System.Windows.Forms.DataGridViewComboBoxColumn OptionKeyOne;
-        private System.Windows.Forms.DataGridViewComboBoxColumn OptionKeyTwo;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Key;
-        private System.Windows.Forms.DataGridViewComboBoxColumn KeystrokesOff;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProzessName;
+        private System.Data.DataColumn dataColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deviceIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discriptionDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DcsID;
+        private System.Windows.Forms.DataGridViewComboBoxColumn DiviceID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clickableButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Discription;
+        private System.Windows.Forms.DataGridViewComboBoxColumn TypeClickable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dcsIDDataGridViewTextBoxColumn;
     }
 }
 

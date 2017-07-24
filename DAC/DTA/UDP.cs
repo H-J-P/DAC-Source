@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
-using System.Linq;
 using System.Text;
 
 namespace DAC
@@ -19,7 +17,8 @@ namespace DAC
         private static IPEndPoint sendingEndPoint = null;
         private static IPEndPoint listenerEndPoint = null;
         private static Socket sendingSocket = null;
-        private static String receivedData2 = "";
+        private static string newline = Environment.NewLine;
+        private static string receivedData2 = "";
 
         #region comments
         // Create a socket object. This is the fundamental device used to network
@@ -60,10 +59,12 @@ namespace DAC
             }
         }
 
-        public static void StartListener(int listenPort, ref string receivedData) // Server
+        public static void StartListener(int listenPort)
         {
             listener = new UdpClient(listenPort);
+
             listenerEndPoint = new IPEndPoint(IPAddress.Any, listenPort);
+
             byte[] receiveByteArray;
 
             try
@@ -75,20 +76,23 @@ namespace DAC
                 {
                     receiveByteArray = listener.Receive(ref listenerEndPoint);
 
-                    if (receivedData.Length < 4)
+                    if (receiveByteArray.Length > 0)
                     {
-                        receivedData = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
-                        
-                        if (receivedData.Length > 4)
-                            ImportExport.LogMessage("Received   package: " + receivedData, true);
-                    }
-                    else
-                    {
-                        receivedData2 = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
-                        receivedData += ":" + receivedData2.Substring(receivedData2.IndexOf("*") + 1);
+                        if (FormMain.receivedData.Length == 0)
+                        {
+                            FormMain.receivedData = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
 
-                        if (receivedData2.Length > 4)
-                            ImportExport.LogMessage("Received   package: " + receivedData2, true);
+                            if (FormMain.receivedData.Length > 4 && FormMain.logDetail)
+                                ImportExport.LogMessage("Received   package: " + FormMain.receivedData, true);
+                        }
+                        else
+                        {
+                            receivedData2 = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
+                            FormMain.receivedData += receivedData2.Substring(receivedData2.IndexOf("*") + 1);
+
+                            if (FormMain.receivedData.Length > 4 && FormMain.logDetail)
+                                ImportExport.LogMessage("+ Received package: " + FormMain.receivedData, true);
+                        }
                     }
                 }
             }

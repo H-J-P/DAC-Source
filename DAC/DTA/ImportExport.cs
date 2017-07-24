@@ -50,7 +50,7 @@ namespace DAC
         }
 
         static string newline = System.Environment.NewLine;
-        public static List<String> log = new List<string>();
+        public static List<string> log = new List<string>();
         private static int prozessID;
 
         #endregion
@@ -128,9 +128,10 @@ namespace DAC
 
             try
             {
-                xtw = new XmlTextWriter(fileLoction, Encoding.UTF8);
-                xtw.Formatting = Formatting.Indented;
-
+                xtw = new XmlTextWriter(fileLoction, Encoding.UTF8)
+                {
+                    Formatting = Formatting.Indented
+                };
                 xtw.WriteStartDocument();
                 xtw.WriteStartElement(startElement);
 
@@ -152,7 +153,7 @@ namespace DAC
             }
         }
 
-        public static void LogMessage(String message, bool withTimeStemp)
+        public static void LogMessage(string message, bool withTimeStemp)
         {
             try
             {
@@ -160,6 +161,9 @@ namespace DAC
                     log.Add(DateTime.Now.ToString("HH:mm:ss.fff") + "  " + message);
                 else
                     log.Add(message);
+
+                if (log.Count > 5000)
+                    log.RemoveAt(6);
             }
             catch { }
         }
@@ -419,8 +423,10 @@ namespace DAC
             try
             {
                 // Initialize the XmlTextReader variable with the name of the file
-                xtr = new XmlTextReader(fileLoction);
-                xtr.WhitespaceHandling = WhitespaceHandling.None;
+                xtr = new XmlTextReader(fileLoction)
+                {
+                    WhitespaceHandling = WhitespaceHandling.None
+                };
 
                 // Moves the reader to the root element.
                 xtr.MoveToContent();
@@ -498,8 +504,10 @@ namespace DAC
             try
             {
                 // Initialize the XmlTextReader variable with the name of the file
-                xtr = new XmlTextReader(fileLoction);
-                xtr.WhitespaceHandling = WhitespaceHandling.None;
+                xtr = new XmlTextReader(fileLoction)
+                {
+                    WhitespaceHandling = WhitespaceHandling.None
+                };
 
                 // Scan the XML file
                 while (xtr.Read())

@@ -58,19 +58,79 @@ C:\Users\Heinz\Desktop\DAC\DTA\bin\x86\Debug\DAC.exe.config
 C:\Users\Heinz\Desktop\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
 C:\Users\Heinz\Desktop\DAC\DTA\obj\x86\Debug\DAC.exe
 C:\Users\Heinz\Desktop\DAC\DTA\obj\x86\Debug\DAC.pdb
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe.config
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.pdb
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe.manifest
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.application
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.pdb
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\ArcazeHid.dll
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.FormMain.resources
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.Properties.Resources.resources
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.GenerateResource.Cache
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.TrustInfo.xml
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe.manifest
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.application
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.DirectInput.dll
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.dll
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.xml
+D:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.DirectInput.xml
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe.config
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.pdb
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe.manifest
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.application
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.pdb
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\ArcazeHid.dll
-C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.DirectInput.dll
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.dll
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.xml
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\Microsoft.DirectX.DirectInput.xml
+C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csprojResolveAssemblyReference.cache
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.FormMain.resources
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.Properties.Resources.resources
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.GenerateResource.Cache
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.TrustInfo.xml
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe.manifest
 C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.application
-C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe
-C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.pdb
-C:\Users\Heinz\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\bin\x86\Debug\DAC.exe.config
+E:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+E:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.exe
+E:\Dropbox\Dropbox\Projects\DAC V5\DAC\DTA\obj\x86\Debug\DAC.pdb
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\DAC.exe.config
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\DAC.exe.manifest
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\DAC.application
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\DAC.exe
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\DAC.pdb
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\bin\x86\Debug\ArcazeHid.dll
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.csprojResolveAssemblyReference.cache
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.FormMain.resources
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.Properties.Resources.resources
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.csproj.GenerateResource.Cache
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.TrustInfo.xml
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.exe.manifest
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.application
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.exe
+Z:\Documents\Ikarus_Source\DAC-Source\DAC\DTA\obj\x86\Debug\DAC.pdb
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\DAC.exe.config
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\DAC.exe.manifest
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\DAC.application
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\DAC.exe
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\DAC.pdb
+E:\DCS\Projekte\DAC\DTA\bin\x86\Debug\ArcazeHid.dll
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.csproj.ResolveComReference.cache
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.FormMain.resources
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.Properties.Resources.resources
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.csproj.GenerateResource.Cache
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.TrustInfo.xml
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.exe.manifest
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.application
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.exe
+E:\DCS\Projekte\DAC\DTA\obj\x86\Debug\DAC.pdb

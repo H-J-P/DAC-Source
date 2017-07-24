@@ -16,7 +16,8 @@ namespace DAC
         {
             get
             {
-                return this.arcazeDevice.Info.Serial;
+                //return (this.arcazeDevice.Info.DeviceName + " " + this.arcazeDevice.Info.Serial);
+                return (this.arcazeDevice.Info.Serial);
             }
         }
 
@@ -103,7 +104,7 @@ namespace DAC
             }
         }
 
-        public void LEDWriteOutput(int moduleNum, int connectorNum, int portNum, int resolution, Double data, int type, bool reverse, bool log)
+        public void LEDWriteOutput(ref int moduleNum, ref int connectorNum, ref int portNum, ref int resolution, Double data, int type, bool reverse, bool log)
         {
             if (arcazeDevice == null)
                 return;
@@ -125,7 +126,7 @@ namespace DAC
                 if (reverse)
                     data = 1 - data;
 
-                resolutionValue = Convert.ToUInt32(ResolutionValue(resolution)); // LED-Driver 3
+                resolutionValue = Convert.ToUInt32(ResolutionValue(ref resolution)); // LED-Driver 3
                 data *= resolutionValue;
 
                 if (data > resolutionValue)
@@ -152,7 +153,7 @@ namespace DAC
             }
         }
 
-        private uint ResolutionValue(int resolution)
+        private uint ResolutionValue(ref int resolution)
         {
             switch (resolution)
             {
@@ -195,7 +196,7 @@ namespace DAC
         /// <param name="devAdress">0 .. 15</param>
         /// <param name="digit">SevenSegment Value</param>
         /// <param name="digitMask">0x00 .. 0xFF</param>
-        public void WriteDigitsToDisplayDriver(int devAdress, ref string[] digit, int digitMask, bool log, bool reverse, int segmentIndex, int cycle, int delay)
+        public void WriteDigitsToDisplayDriver(int devAdress, ref string[] digit, int digitMask, bool log, bool reverse, ref int segmentIndex, int cycle, int delay)
         {
             Digits = new List<byte>(8);
 

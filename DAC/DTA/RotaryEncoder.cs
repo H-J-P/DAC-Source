@@ -19,7 +19,7 @@ namespace DAC
         static int retValue = 0;
         static bool flipValue = true;
 
-        public static int Encoder(int pinA, int pinB, ref int oldValue)
+        public static int Encoder(int pinA, int pinB, int oldValue)
         {
             newValue = (pinA * 2) + pinB;
 

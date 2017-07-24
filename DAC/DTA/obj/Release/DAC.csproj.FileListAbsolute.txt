@@ -1,0 +1,2 @@
+E:\DCS\Projekte\DAC\DTA\bin\Release\DAC.exe.config
+E:\DCS\Projekte\DAC\DTA\obj\Release\DAC.csproj.ResolveComReference.cache
