@@ -494,6 +494,7 @@ namespace DAC
                                 ImportExport.LogMessage("Used configuration file : " + readFile + ".xml", true);
 
                                 InitDrivers();
+                                RefreshPulldown();
 
                                 lastFile = readFile;
 
@@ -3048,7 +3049,6 @@ namespace DAC
                     ImportExport.LogMessage("Switch all Off, " + dcsExportID + " ... " + e.ToString(), true);
                 }
             }
-
         }
 
         private void SwitchAll(bool onValue)

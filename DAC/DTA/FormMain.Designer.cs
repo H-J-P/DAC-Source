@@ -5669,7 +5669,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(181, 13);
             this.labelVersion.TabIndex = 57;
-            this.labelVersion.Text = "(C) H.J.P. 2017 Version 0.997d";
+            this.labelVersion.Text = "(C) H.J.P. 2017 Version 0.997e";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonReset
