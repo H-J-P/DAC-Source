@@ -1883,7 +1883,7 @@ namespace DAC
                 {
                     listBox1.Items.Add(ImportExport.log[i]);
 
-                    if (listBox1.Items.Count > 300)
+                    if (listBox1.Items.Count > 2000)
                         listBox1.Items.RemoveAt(6);
                     //if (checkBoxWriteLogsToHD.Checked)
                     //    listBox3.Items.Add(ImportExport.log[i]);
