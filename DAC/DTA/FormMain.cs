@@ -38,6 +38,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using WindowsInput;
+using Newtonsoft.Json;
 
 namespace DAC
 {
@@ -169,6 +170,9 @@ namespace DAC
 
         enum State
         {
+            sendJson,
+            initConfig,
+            sendConfig,
             sendKeys,
             readfile,
             startup,
@@ -197,8 +201,24 @@ namespace DAC
         private DataRow[] findDriver = new DataRow[] { };
         private DataRow[] rows = new DataRow[] { };
         private DataRow[] clickableRows = new DataRow[] { };
-
         private DataRow row = null;
+
+        //---------------------- Tables for JSON -----------------------------
+        public static DataSet dsJSON = new DataSet();
+        public static DataSet dsJson;
+        public static DataTable dtjsonLamps;
+        public static DataTable dtjsonSwitches;
+        public static DataTable dtJson;
+
+        public static string json = "";
+
+        private static DataRow[] dataRows = new DataRow[] { };
+        public static DataRow dataRow = null;
+
+        public static DataTable dtLamps;
+        public static DataTable dtDisplays;
+
+
         bool[] checkBoxDP = new bool[8] { false, false, false, false, false, false, false, false };
         bool[] checkBox = new bool[8];
 
@@ -286,6 +306,9 @@ namespace DAC
         private int timerIntervalTest = 100;
         private int timerIntervalReset = 5000;
         private int type = 0;
+        private int connectCounter = 40;
+        private int connectCounterMax = 20;
+        private int configID = -1;
 
         //private uint resolutionValue = 1;
 
@@ -345,6 +368,7 @@ namespace DAC
                     checkBoxWriteLogsToHD.Checked = false;
                     checkBoxLog.Checked = false;
                     logDetail = checkBoxLog.Checked;
+                    textBoxIP.Text = "127.0.0.1";
                     textBoxPortListener.Text = "26026";
                     textBoxPortSender.Text = "26027";
                     textBoxTestDataPackage.Text = "";
@@ -737,9 +761,67 @@ namespace DAC
                         labelPleaseWait.Text = "";
                         buttonInit.Visible = false;
                         timerMain.Interval = timerInterval;
-                        timerstate = State.run;
+
+                        timerstate = State.initConfig;
                     }
                     catch (Exception f) { ImportExport.LogMessage("State system check ... " + f.ToString(), true); }
+
+                    lStateEnabled = true;
+                }
+            }
+
+            if (timerstate == State.initConfig)
+            {
+                if (lStateEnabled)
+                {
+                    lStateEnabled = false;
+
+                    try
+                    {
+                        package = "{'Registration': {'Name': 'Ikarus', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
+
+                        package = package.Replace("'", '"'.ToString());
+
+                        ImportExport.LogMessage("Request new connection: " + package, true);
+                    }
+                    catch { }
+
+                    timerstate = State.sendConfig;
+
+                    lStateEnabled = true;
+                }
+            }
+
+            if (timerstate == State.sendConfig)
+            {
+                if (lStateEnabled)
+                {
+                    lStateEnabled = false;
+
+                    try
+                    {
+                        if (receivedData.Length > 0) { GrabValues(); }
+
+                        if (configID == -1)
+                        {
+                            connectCounter++;
+
+                            if (connectCounter >= connectCounterMax / 2)
+                            {
+                                UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortListener.Text), package);
+
+                                connectCounter = 0;
+
+                                ImportExport.LogMessage("Send connection: " + package, true);
+                            }
+                        }
+                        else
+                        {
+                            connectCounter = connectCounterMax / 2;
+                            timerstate = State.run;
+                        }
+                    }
+                    catch { }
 
                     lStateEnabled = true;
                 }
@@ -1859,6 +1941,149 @@ namespace DAC
             dataSetDisplaysLEDs.Tables["ClickableSwitch"].Clear();
         }
 
+        private void GenerateJSONDataset()
+        {
+            int maxRows = 62;
+            string name = "";
+
+            try
+            {
+                if (configID != -1)
+                {
+                    dtJson = new DataTable("Data");
+                    dtJson.Columns.Add("Description");
+                    dtJson.Columns.Add("Type");
+                    dtJson.Columns.Add("ID");
+                    dtJson.Columns.Add("Format");
+                    dtJson.Columns.Add("ExportID");
+                    dtJson.Columns.Add("negateValue");
+
+
+                    for (int i = 0; i < dtLamps.Rows.Count; i++)
+                    {
+                        try
+                        {
+                            name = dtLamps.Rows[i]["Description"].ToString();
+
+                            if (name.Length > 20) { name = name.Substring(0, 20); }
+
+                            dataRow = dtJson.NewRow();
+
+                            dataRow["Description"] = name;
+                            dataRow["Type"] = "ID";
+                            dataRow["ID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
+                            dataRow["Format"] = "float4";
+                            dataRow["ExportID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
+                            dataRow["negateValue"] = dtLamps.Rows[i]["Reverse"].ToString();
+
+                            dtJson.Rows.Add(dataRow);
+
+                            if (dtJson.Rows.Count > maxRows)
+                            {
+                                dtJson.AcceptChanges();
+
+                                GenerateAndSentJson(dtJson);
+
+                                dtJson.Clear();
+
+                                Thread.Sleep(10);
+                            }
+                        }
+                        catch (Exception f)
+                        {
+                            ImportExport.LogMessage("GenerateJSONDataset for lamps " + f.ToString(), true);
+                        }
+                    }
+
+                    for (int i = 0; i < dtDisplays.Rows.Count; i++)
+                    {
+                        try
+                        {
+                            if (dtDisplays.Rows[i]["DCSExportID"].ToString() != "")
+                            {
+                                name = dtDisplays.Rows[i]["DCSExportID"].ToString();
+
+                                if (name.Length > 20) { name = name.Substring(0, 20); }
+
+                                dataRow = dtJson.NewRow();
+                                dataRow["Description"] = name;
+                                dataRow["Type"] = "ID";
+                                dataRow["ID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
+                                dataRow["Format"] = "float4";
+                                dataRow["ExportID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
+                                dataRow["negateValue"] = dtDisplays.Rows[i]["Reverse"].ToString();
+
+                                dtJson.Rows.Add(dataRow);
+
+                                if (dtJson.Rows.Count > maxRows)
+                                {
+                                    dtJson.AcceptChanges();
+
+                                    GenerateAndSentJson(dtJson);
+
+                                    dtJson.Clear();
+
+                                    Thread.Sleep(10);
+                                }
+                            }
+                        }
+                        catch (Exception f)
+                        {
+                            ImportExport.LogMessage("GenerateJSONDataset for switches: " + f.ToString(), true);
+                        }
+                    }
+
+                    if (dtJson.Rows.Count > 0)
+                    {
+                        try
+                        {
+                            dtJson.AcceptChanges();
+
+                            GenerateAndSentJson(dtJson);
+
+                            dtJson.Clear();
+                        }
+                        catch (Exception f)
+                        {
+                            ImportExport.LogMessage("GenerateJSONDataset for switches: " + f.ToString(), true);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ImportExport.LogMessage("GenerateJSONDataset: " + ex.ToString(), true);
+            }
+        }
+
+        private void GenerateAndSentJson(DataTable dtJson)
+        {
+            try
+            {
+                if (dtJson.Rows.Count > 0)
+                {
+                    dsJSON = new DataSet();
+                    dsJSON.Tables.Add(dtJson);
+
+                    json = JsonConvert.SerializeObject(dsJSON, Formatting.None);
+
+                    dsJSON.Tables.Remove(dtJson);
+
+                    string configIDString = "{'ConfigID': " + configID + ", ";
+                    configIDString = configIDString.Replace("'", '"'.ToString());
+
+                    json = configIDString + json.Substring(1, json.Length - 1);
+
+                    UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortListener.Text), json);
+
+                    ImportExport.LogMessage("Send json data -> " + json.Length + " bytes.", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                ImportExport.LogMessage("GenerateAndSentJson: " + ex.ToString(), true);
+            }
+        }
         private string GenerateMask()
         {
             maskHex = "";
@@ -1916,6 +2141,25 @@ namespace DAC
                 encoderNo -= 10;
             }
             pin = (encoderNo * 2);  // encoder 0 => Pin 0/1; encoder 1 => Pin 2/3; encoder 2 => Pin 4/5 ....
+        }
+
+        private void GetConfigID(ref string gotData)
+        {
+            string[] receivedItems = gotData.Split(':');
+
+            try
+            {
+                for (int n = 0; n < receivedItems.Length; n++)
+                {
+                    if (receivedItems[n].IndexOf("ConfigID=") != -1)
+                    {
+                        configID = Convert.ToInt32(receivedItems[n].Substring(receivedItems[n].IndexOf("=", 0) + 1));
+                        ImportExport.LogMessage("Got ConfigID: " + configID, true);
+                        break;
+                    }
+                }
+            }
+            catch (Exception e) { ImportExport.LogMessage("GetConfigID problem .. " + e.ToString(), true); }
         }
 
         private string GrabValue(string ID, ref string gotData)
@@ -2011,6 +2255,11 @@ namespace DAC
         {
             gotData = receivedData;
             arcazeFromGrid = "";
+
+            if (receivedData.IndexOf("ConfigID=") != -1)
+            {
+                GetConfigID(ref receivedData);
+            }
 
             newValue = GrabValue(searchStringForFile, ref gotData);
 
@@ -2302,7 +2551,7 @@ namespace DAC
 
                 dataSetConfig.Tables["VirtualKeys"].Clear();
 
-                dataSetConfig.Tables["VirtualKeys"].Rows.Add("", "0x00");
+                dataSetConfig.Tables["VirtualKeys"].Rows.Add(" ", "0x00");
                 dataSetConfig.Tables["VirtualKeys"].Rows.Add("BACKSPACE", "0x08");
                 dataSetConfig.Tables["VirtualKeys"].Rows.Add("TAB", "0x09");
                 dataSetConfig.Tables["VirtualKeys"].Rows.Add("ENTER", "0x0D");
@@ -2478,6 +2727,8 @@ namespace DAC
                 }
 
                 dataSetDisplaysLEDs.AcceptChanges();
+
+
             }
             catch { }
         }
@@ -2946,6 +3197,11 @@ namespace DAC
                 dataSetConfig.Tables["Config"].Rows[0]["TestData"] = textBoxTestDataPackage.Text.Replace(newline, "");
                 dataSetConfig.Tables["Config"].Rows[0]["refreshDelay"] = cbDelayRefresh.Text;
                 dataSetConfig.Tables["Config"].Rows[0]["refreshCycles"] = cbRefreshCycle.Text;
+            }
+            else
+            {
+                dataSetConfig.Tables["Config"].Rows.Add(textBoxLastFile.Text, textBoxIP.Text, textBoxPortListener.Text, trackBarLEDDriverBrightness.Value.ToString("X2"), trackBarDisplayBrightness.Value.ToString("X2"),
+                    textBoxTestDataPackage.Text.Replace(newline, ""), textBoxIntervalTimer.Text, false, false, textBoxPortSender.Text, cbRefreshCycle.Text, cbDelayRefresh.Text);
             }
             dataSetConfig.Tables["Config"].AcceptChanges();
             ImportExport.DatasetToXml("config.xml", dataSetConfig);

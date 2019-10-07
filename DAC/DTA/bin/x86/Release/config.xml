@@ -1,7 +1,21 @@
 <?xml version="1.0" standalone="yes"?>
 <NewDataSet>
+  <Config>
+    <LastFile>A-10C-Radio-2_Michael.xml</LastFile>
+    <IP>127.0.0.1</IP>
+    <PortListener>26026</PortListener>
+    <Tlc5943Brightness>23</Tlc5943Brightness>
+    <Display7219DigitsIntensity>04</Display7219DigitsIntensity>
+    <TestData />
+    <IntervalTimer>5</IntervalTimer>
+    <WriteToHD>false</WriteToHD>
+    <LogAllActions>false</LogAllActions>
+    <PortSender>26027</PortSender>
+    <refreshCycles>1</refreshCycles>
+    <refreshDelay>10</refreshDelay>
+  </Config>
   <VirtualKeys>
-    <Key />
+    <Key xml:space="preserve"> </Key>
     <KeyCode>0x00</KeyCode>
   </VirtualKeys>
   <VirtualKeys>
