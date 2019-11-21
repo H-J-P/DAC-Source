@@ -217,6 +217,7 @@ namespace DAC
 
         public static DataTable dtLamps;
         public static DataTable dtDisplays;
+        public static DataTable dtDcs_ID;
 
 
         bool[] checkBoxDP = new bool[8] { false, false, false, false, false, false, false, false };
@@ -487,6 +488,8 @@ namespace DAC
                     catch (Exception f) { ImportExport.LogMessage("StartListener: ... " + f.ToString(), true); }
 
                     timerstate = State.startup;
+                    //timerstate = State.initConfig; // <====== only for test
+
                     lStateEnabled = true;
                 }
             }
@@ -778,7 +781,7 @@ namespace DAC
 
                     try
                     {
-                        package = "{'Registration': {'Name': 'Ikarus', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
+                        package = "{'Registration': {'Name': 'DCS', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
 
                         package = package.Replace("'", '"'.ToString());
 
@@ -806,18 +809,26 @@ namespace DAC
                         {
                             connectCounter++;
 
-                            if (connectCounter >= connectCounterMax / 2)
+                            if (connectCounter >= connectCounterMax)
                             {
-                                UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortListener.Text), package);
+                                UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), package);
 
                                 connectCounter = 0;
 
-                                ImportExport.LogMessage("Send connection: " + package, true);
+                                if (loopCounter == 0)
+                                {
+                                    ImportExport.LogMessage("Send connection: " + package, true);
+                                }
+                                loopCounter++;
                             }
                         }
                         else
                         {
                             connectCounter = connectCounterMax / 2;
+
+                            GenerateJSONDataset();
+
+                            loopCounter = 0;
                             timerstate = State.run;
                         }
                     }
@@ -1946,6 +1957,8 @@ namespace DAC
             int maxRows = 62;
             string name = "";
 
+            dtDcs_ID = dataSetDisplaysLEDs.Tables["DCS_ID"];
+
             try
             {
                 if (configID != -1)
@@ -1958,61 +1971,36 @@ namespace DAC
                     dtJson.Columns.Add("ExportID");
                     dtJson.Columns.Add("negateValue");
 
+                    dtLamps = dataSetDisplaysLEDs.Tables["LEDs"];
 
-                    for (int i = 0; i < dtLamps.Rows.Count; i++)
+                    if (dtLamps != null)
                     {
-                        try
+                        for (int i = 0; i < dtLamps.Rows.Count; i++)
                         {
-                            name = dtLamps.Rows[i]["Description"].ToString();
-
-                            if (name.Length > 20) { name = name.Substring(0, 20); }
-
-                            dataRow = dtJson.NewRow();
-
-                            dataRow["Description"] = name;
-                            dataRow["Type"] = "ID";
-                            dataRow["ID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
-                            dataRow["Format"] = "float4";
-                            dataRow["ExportID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
-                            dataRow["negateValue"] = dtLamps.Rows[i]["Reverse"].ToString();
-
-                            dtJson.Rows.Add(dataRow);
-
-                            if (dtJson.Rows.Count > maxRows)
+                            try
                             {
-                                dtJson.AcceptChanges();
+                                DataRow[] desc = dtDcs_ID.Select("ExportID='" + dtLamps.Rows[i]["DCSExportID"].ToString() + "'");
 
-                                GenerateAndSentJson(dtJson);
+                                name = desc[0]["Description"].ToString();
 
-                                dtJson.Clear();
-
-                                Thread.Sleep(10);
-                            }
-                        }
-                        catch (Exception f)
-                        {
-                            ImportExport.LogMessage("GenerateJSONDataset for lamps " + f.ToString(), true);
-                        }
-                    }
-
-                    for (int i = 0; i < dtDisplays.Rows.Count; i++)
-                    {
-                        try
-                        {
-                            if (dtDisplays.Rows[i]["DCSExportID"].ToString() != "")
-                            {
-                                name = dtDisplays.Rows[i]["DCSExportID"].ToString();
-
-                                if (name.Length > 20) { name = name.Substring(0, 20); }
+                                if (name.Length > 30) { name = name.Substring(0, 30); }
 
                                 dataRow = dtJson.NewRow();
+
                                 dataRow["Description"] = name;
                                 dataRow["Type"] = "ID";
-                                dataRow["ID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
+                                dataRow["ID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
                                 dataRow["Format"] = "float4";
-                                dataRow["ExportID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
-                                dataRow["negateValue"] = dtDisplays.Rows[i]["Reverse"].ToString();
+                                dataRow["ExportID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
 
+                                if (dtLamps.Rows[i]["Reverse"].ToString() == "False")
+                                {
+                                    dataRow["negateValue"] = "0";
+                                }
+                                else
+                                {
+                                    dataRow["negateValue"] = "1";
+                                }
                                 dtJson.Rows.Add(dataRow);
 
                                 if (dtJson.Rows.Count > maxRows)
@@ -2026,10 +2014,63 @@ namespace DAC
                                     Thread.Sleep(10);
                                 }
                             }
+                            catch (Exception f)
+                            {
+                                ImportExport.LogMessage("GenerateJSONDataset for lamps " + f.ToString(), true);
+                            }
                         }
-                        catch (Exception f)
+                    }
+
+                    dtDisplays = dataSetDisplaysLEDs.Tables["Displays"];
+
+                    if (dtDisplays != null)
+                    {
+                        for (int i = 0; i < dtDisplays.Rows.Count; i++)
                         {
-                            ImportExport.LogMessage("GenerateJSONDataset for switches: " + f.ToString(), true);
+                            try
+                            {
+                                if (dtDisplays.Rows[i]["DCSExportID"].ToString() != "")
+                                {
+                                    DataRow[] desc = dtDcs_ID.Select("ExportID='" + dtDisplays.Rows[i]["DCSExportID"].ToString() + "'");
+
+                                    name = desc[0]["Description"].ToString();
+
+                                    if (name.Length > 30) { name = name.Substring(0, 30); }
+
+                                    dataRow = dtJson.NewRow();
+                                    dataRow["Description"] = name;
+                                    dataRow["Type"] = "ID";
+                                    dataRow["ID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
+                                    dataRow["Format"] = "float4";
+                                    dataRow["ExportID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
+
+                                    if (dtDisplays.Rows[i]["Reverse"].ToString() == "False")
+                                    {
+                                        dataRow["negateValue"] = "0";
+                                    }
+                                    else
+                                    {
+                                        dataRow["negateValue"] = "1";
+                                    }
+
+                                    dtJson.Rows.Add(dataRow);
+
+                                    if (dtJson.Rows.Count > maxRows)
+                                    {
+                                        dtJson.AcceptChanges();
+
+                                        GenerateAndSentJson(dtJson);
+
+                                        dtJson.Clear();
+
+                                        Thread.Sleep(10);
+                                    }
+                                }
+                            }
+                            catch (Exception f)
+                            {
+                                ImportExport.LogMessage("GenerateJSONDataset for displays: " + f.ToString(), true);
+                            }
                         }
                     }
 
@@ -2074,9 +2115,9 @@ namespace DAC
 
                     json = configIDString + json.Substring(1, json.Length - 1);
 
-                    UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortListener.Text), json);
+                    UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), json);
 
-                    ImportExport.LogMessage("Send json data -> " + json.Length + " bytes.", true);
+                    ImportExport.LogMessage("Send json data -> " + json.ToString() + " - " + json.Length + " bytes.", true);
                 }
             }
             catch (Exception ex)
@@ -2084,6 +2125,7 @@ namespace DAC
                 ImportExport.LogMessage("GenerateAndSentJson: " + ex.ToString(), true);
             }
         }
+
         private string GenerateMask()
         {
             maskHex = "";

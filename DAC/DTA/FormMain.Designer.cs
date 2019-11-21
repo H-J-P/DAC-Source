@@ -5665,11 +5665,11 @@
             this.labelVersion.AutoSize = true;
             this.labelVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.labelVersion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(401, 668);
+            this.labelVersion.Location = new System.Drawing.Point(398, 668);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(181, 13);
+            this.labelVersion.Size = new System.Drawing.Size(189, 13);
             this.labelVersion.TabIndex = 57;
-            this.labelVersion.Text = "(C) H.J.P. 2017 Version 0.997e";
+            this.labelVersion.Text = "(C) H.J.P. 2019 Version 0.9.9.26";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonReset
