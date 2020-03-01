@@ -174,7 +174,7 @@ namespace DAC
             initConfig,
             sendConfig,
             sendKeys,
-            readfile,
+            readNewFile,
             startup,
             init,
             systemCheck,
@@ -203,7 +203,6 @@ namespace DAC
         private DataRow[] clickableRows = new DataRow[] { };
         private DataRow row = null;
 
-        //---------------------- Tables for JSON -----------------------------
         public static DataSet dsJSON = new DataSet();
         public static DataSet dsJson;
         public static DataTable dtjsonLamps;
@@ -236,7 +235,6 @@ namespace DAC
         private bool arcazeDeviceFound = false;
         private bool arcazeFound = false;
         private bool checkTest = false;
-        //private bool initDone = false;
         private bool ledOn = false;
         private bool loadFile = false;
         private bool lStateEnabled = true;
@@ -288,7 +286,6 @@ namespace DAC
         private string encoderName = "";
         private int mainTestLoop = 2;
         private int module = 0;
-        //private int numberDigit = 0;
         private int numberInputChanged = 0;
         private int loopCounter = 0;
         private int loopMax = 50;
@@ -297,9 +294,6 @@ namespace DAC
         private int port = 0;
         private int portValue = 0;
 
-        //private int posDot = -1;
-        private int posStart = 0;
-        private int posEnd = 0;
         private int resolution = 1;
         private int segmentIndex = 0;
         private int testLoop = 0;
@@ -310,25 +304,19 @@ namespace DAC
         private int connectCounter = 40;
         private int connectCounterMax = 20;
         private int configID = -1;
-
-        //private uint resolutionValue = 1;
+        private string[] receivedItems = new string[] { };
 
         private double encoderLastValue = 0;
 
         private string[] digit = new string[8] { "", "", "", "", "", "", "", "" };
         private string arcazeAddress = "";
         private string arcazeFromGrid = "";
-        //private string button = "";
-        //private string buttonsPressed = "";
         private string dataSetFilename = "\\Dataset.xml";
         private string dcsExportID = "";
         private string devAddress = "";
         private string dezValue = "";
         private string digitMask = "";
         private string digitString = "";
-        private string fragment = "";
-        private string fragmentID = "";
-        private string gotData = "";
         private string maskHex = "";
         private string newline = System.Environment.NewLine;
         private string newValue = "";
@@ -350,7 +338,11 @@ namespace DAC
         private string valueOff = "0.0";
         private string pinMax = "1.0";
         private string arcaze = "";
+        private static string start = "=" + '"';
         public static bool logDetail = false;
+        private bool idFound = false;
+
+        private static bool debug = false;
 
         #endregion
 
@@ -378,10 +370,12 @@ namespace DAC
                     ImportExport.XmlToDataSet(Application.StartupPath + "\\" + "config.xml", dataSetConfig);
                     ImportExport.LogMessage("Loaded config.xml ... ", true);
 
-                    //checkBoxWriteLogsToHD.Checked = Convert.ToBoolean(dataSetConfig.Tables["Config"].Rows[0]["WriteToHD"]);
                     checkBoxLog.Checked = false; // Convert.ToBoolean(dataSetConfig.Tables["Config"].Rows[0]["LogAllActions"]);
 
-                    if (checkBoxLog.Checked) logDetail = true;
+                    if (checkBoxLog.Checked)
+                    {
+                        logDetail = true;
+                    }
 
                     textBoxLastFile.Text = dataSetConfig.Tables["Config"].Rows[0]["LastFile"].ToString();
 
@@ -403,7 +397,9 @@ namespace DAC
                     InitConfig();
 
                     if (textBoxLastFile.Text.IndexOf(".") == -1)
+                    {
                         textBoxLastFile.Text += ".xml";
+                    }
 
                     ImportExport.XmlToDataSet(Application.StartupPath + "\\" + textBoxLastFile.Text, dataSetDisplaysLEDs);
                     readFile = textBoxLastFile.Text;
@@ -427,19 +423,18 @@ namespace DAC
                     tabControl1.TabPages.Remove(Info);
                     tabControl1.TabPages.Remove(Experimental);
                     tabControl1.TabPages.Remove(Copyright);
-                    tabControl1.SelectedIndex = 6;
-                    //tabControl1.TabPages.Remove(Keystrokes);
+                    tabControl1.TabPages.Remove(Keystrokes);
+                    tabControl1.SelectedIndex = 5;
 
-                    //ShoutHello();
                     RefreshPulldown();
                     StartTimer();
+                    stop = false;
                 }
                 catch (Exception f) { ImportExport.LogMessage("Application start problem ... " + f.ToString(), true); }
             }
             catch (Exception f) { ImportExport.LogMessage("Application start problem ... " + f.ToString(), true); }
         }
 
-        //++++++++++++ Main loop ++++++++++++++
         private void TimerMain_Tick(object sender, EventArgs e)
         {
             #region send keys timebased
@@ -462,6 +457,7 @@ namespace DAC
 
                 lStateEnabled = true;
             }
+
             #endregion
 
             #region start listener
@@ -488,16 +484,14 @@ namespace DAC
                     catch (Exception f) { ImportExport.LogMessage("StartListener: ... " + f.ToString(), true); }
 
                     timerstate = State.startup;
-                    //timerstate = State.initConfig; // <====== only for test
 
                     lStateEnabled = true;
                 }
             }
+
             #endregion
 
-            #region switch to new file
-
-            if (timerstate == State.readfile)
+            if (timerstate == State.readNewFile)
             {
                 if (lStateEnabled)
                 {
@@ -508,42 +502,48 @@ namespace DAC
                     {
                         if (readFile.Length > 0 && readFile != lastFile)
                         {
-                            if (File.Exists(Application.StartupPath + "\\" + readFile + ".xml"))
+                            if (!File.Exists(Application.StartupPath + "\\" + readFile))
                             {
-                                FindAllArcaze();
+                                ImportExport.LogMessage("File not found: " + readFile + " ... ", true);
+                            }
+                            else
+                            {
                                 SwitchAll(off);
                                 SwitchInverseOff();
 
-                                ImportExport.LogMessage("Read configuration file : " + readFile + ".xml", true);
+                                ImportExport.LogMessage("Read configuration file : " + readFile, true);
+                                ImportExport.XmlToDataSet(Application.StartupPath + "\\" + readFile, dataSetDisplaysLEDs);
+                                ImportExport.LogMessage("Used configuration file : " + readFile , true);
 
-                                dataSetDisplaysLEDs.Clear();
-                                ImportExport.XmlToDataSet(Application.StartupPath + "\\" + readFile + ".xml", dataSetDisplaysLEDs);
-                                ImportExport.LogMessage("Used configuration file : " + readFile + ".xml", true);
-
-                                InitDrivers();
+                                FindAllArcaze();
                                 RefreshPulldown();
+                                InitDrivers();
 
                                 lastFile = readFile;
-
-                                textBoxLastFile.Text = lastFile + ".xml";
+                                textBoxLastFile.Text = lastFile;
                                 this.Text = "D.A.C. - DCS Arcaze Communicator  (Config. with " + textBoxLastFile.Text + ")";
 
                                 timerMain.Interval = timerInterval;
                                 receivedData = receivedDataBackup;
                             }
-                            else { ImportExport.LogMessage("File not found: " + readFile + ".xml ... ", true); }
                         }
                     }
-                    catch (Exception f) { ImportExport.LogMessage("State readfile: " + readFile + ".xml" + " ... " + f.ToString(), true); }
+                    catch (Exception f) { ImportExport.LogMessage("State readfile: " + readFile + " ... " + f.ToString(), true); }
 
-                    timerstate = State.run;
+                    loadFile = false;
+
+                    if (arcazeFound || debug)
+                    {
+                        timerstate = State.sendConfig;
+                    }
+                    else
+                    {
+                        timerstate = State.startup;
+                    }
                     stop = false;
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region startup
 
             if (timerstate == State.startup)
             {
@@ -555,9 +555,6 @@ namespace DAC
                     {
                         labelPleaseWait.Text = "Startup ... ";
                         timerMain.Interval = timerInterval;
-
-                        //if (dataSetConfig.Tables["Joysticks"].Rows.Count == 0)
-                        //    Joystick.FindDevice(ActiveForm);
 
                         arcazeFound = FindAllArcaze();
 
@@ -575,7 +572,6 @@ namespace DAC
 
                             groupBoxDisplay.Visible = true;
                             groupBoxPinSet.Visible = true;
-                            //groupBoxEncoder.Visible = true;
 
                             labelPleaseWait.Text = "";
                             timerMain.Interval = timerInterval;
@@ -587,9 +583,6 @@ namespace DAC
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region stop
 
             if (timerstate == State.stop)
             {
@@ -598,16 +591,12 @@ namespace DAC
                     lStateEnabled = false;
 
                     SwitchAll(off);
-
                     ImportExport.LogMessage(labelVersion.Text, true);
                     timerstate = State.run;
 
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region init
 
             if (timerstate == State.init)
             {
@@ -622,9 +611,9 @@ namespace DAC
                             labelPleaseWait.Text = "Init is running. Please wait ..";
 
                             InitDrivers();
+
                             SwitchAll(on);
                             SwitchAll(off);
-                            //initDone = true;
 
                             testLoop = 0;
                             mainTestLoop = 0;
@@ -636,9 +625,6 @@ namespace DAC
                     }
                 }
             }
-            #endregion
-
-            #region check LEDs
 
             if (timerstate == State.checkLEDS)
             {
@@ -682,9 +668,6 @@ namespace DAC
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region check Displays
 
             if (timerstate == State.checkDisplays)
             {
@@ -706,7 +689,7 @@ namespace DAC
                                     {
                                         dcsExportID = comboCell.Value.ToString();
 
-                                        pattern = ":" + dcsExportID + "=" + (ledOn ? "88888888" : "-") + ":";
+                                        pattern = ":" + dcsExportID + "=" + (ledOn ? "88888888" : "") + ":";
                                         labelPleaseWait.Text = "Display Test " + (ledOn ? "On" : "Off");
 
                                         receivedData = pattern;
@@ -728,9 +711,6 @@ namespace DAC
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region system check
 
             if (timerstate == State.systemCheck)
             {
@@ -765,7 +745,7 @@ namespace DAC
                         buttonInit.Visible = false;
                         timerMain.Interval = timerInterval;
 
-                        timerstate = State.initConfig;
+                        timerstate = State.sendConfig;
                     }
                     catch (Exception f) { ImportExport.LogMessage("State system check ... " + f.ToString(), true); }
 
@@ -781,11 +761,8 @@ namespace DAC
 
                     try
                     {
-                        package = "{'Registration': {'Name': 'DCS', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
-
+                        package = "{'Registration': {'Name': 'DAC', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
                         package = package.Replace("'", '"'.ToString());
-
-                        ImportExport.LogMessage("Request new connection: " + package, true);
                     }
                     catch { }
 
@@ -801,45 +778,44 @@ namespace DAC
                 {
                     lStateEnabled = false;
 
-                    try
+                    if (!stop)
                     {
-                        if (receivedData.Length > 0) { GrabValues(); }
-
-                        if (configID == -1)
+                        try
                         {
-                            connectCounter++;
-
-                            if (connectCounter >= connectCounterMax)
+                            if (configID == -1)
                             {
-                                UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), package);
+                                connectCounter++;
 
-                                connectCounter = 0;
-
-                                if (loopCounter == 0)
+                                if (connectCounter >= connectCounterMax * 10)
                                 {
+                                    package = "{'Registration': {'Name': 'DAC', 'IP': '" + textBoxIP.Text.Trim() + "', 'Port': '" + textBoxPortListener.Text.Trim() + "'}}";
+                                    package = package.Replace("'", '"'.ToString());
+
+                                    UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), package);
+                                    connectCounter = 0;
                                     ImportExport.LogMessage("Send connection: " + package, true);
                                 }
-                                loopCounter++;
+                            }
+                            else
+                            {
+                                if (!loadFile)
+                                {
+                                    connectCounter = connectCounterMax / 2;
+                                    GenerateJSONDataset();
+
+                                    RefreshAllDatagrids();
+                                    InitDrivers();
+
+                                    loopCounter = 0;
+                                    timerstate = State.run;
+                                }
                             }
                         }
-                        else
-                        {
-                            connectCounter = connectCounterMax / 2;
-
-                            GenerateJSONDataset();
-
-                            loopCounter = 0;
-                            timerstate = State.run;
-                        }
+                        catch { }
                     }
-                    catch { }
-
                     lStateEnabled = true;
                 }
             }
-            #endregion
-
-            #region reset
 
             if (timerstate == State.reset)
             {
@@ -870,7 +846,6 @@ namespace DAC
                     lStateEnabled = true;
                 }
             }
-            #endregion
 
             #region LED dimming / blinking
 
@@ -1002,6 +977,7 @@ namespace DAC
 
                 lStateEnabled = true;
             }
+
             #endregion
 
             #region new data
@@ -1009,7 +985,7 @@ namespace DAC
             //if (lStateEnabled && !stop && arcazeFound && receivedData.Length > 4) // New Data ?
             if (lStateEnabled && receivedData.Length > 4) // New Data ?
             {
-                    lStateEnabled = false;
+                lStateEnabled = false;
 
                 if (checkBoxLog.Checked && receivedData.Length > 4)
                     ImportExport.LogMessage("Processing package: " + receivedData, true);
@@ -1035,42 +1011,6 @@ namespace DAC
                 receivedData = "";
 
                 lStateEnabled = true;
-
-                //lStateEnabled = false;
-
-                //try
-                //{
-                //    if (UDP.receivedDataStack.Count > 0)
-                //    {
-                //        receivedData = UDP.receivedDataStack[0];
-                //        UDP.receivedDataStack.RemoveAt(0);
-                //    }
-
-                //    if (receivedData.Length > 0)
-                //    {
-                //        if (checkBoxLog.Checked) ImportExport.LogMessage("Processing package: " + receivedData, true);
-
-                //        if (receivedData.IndexOf("DAC=stop") != -1)
-                //            timerstate = State.stop;
-                //        else
-                //        {
-                //            receivedDataBackup = receivedData;
-                //            GrabValues();
-
-                //            if (receivedDataBackup != receivedData)
-                //            {
-                //                if (checkBoxLog.Checked) ImportExport.LogMessage("Processing package: " + receivedData, true);
-
-                //                GrabValues();
-                //            }
-                //            dataSetDisplaysLEDs.AcceptChanges();
-                //        }
-                //    }
-                //    receivedData = "";
-                //}
-                //catch (Exception f) { ImportExport.LogMessage("State new data: ... " + f.ToString(), true); }
-
-                //lStateEnabled = true;
             }
             #endregion
 
@@ -1659,7 +1599,7 @@ namespace DAC
 
                 loopCounter++;
 
-                if (loopCounter == loopMax)
+                if (loopCounter == loopMax * 10)
                 {
                     MemoryManagement.Reduce();
                     loopCounter = 0;
@@ -1672,26 +1612,8 @@ namespace DAC
                 lStateEnabled = true;
             }
         }
-        //+++++++++++++++++++++++++++++++++++++
 
         #region member functions
-
-        public void ShoutHello()
-        {
-            InputSimulator.SetForegroundProzess("notepad++");
-            // Simulate each key stroke
-            InputSimulator.SimulateKeyDown(VirtualKeyCode.SHIFT);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_H);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_E);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_L);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_L);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_O);
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.VK_1);
-            InputSimulator.SimulateKeyUp(VirtualKeyCode.SHIFT);
-
-            // Alternatively you can simulate text entry to acheive the same end result
-            //InputSimulator.SimulateTextEntry("HELLO!");
-        }
 
         private string CheckLengthOfDisplayValue(ref DataRow row, string dezValue)
         {
@@ -1727,56 +1649,84 @@ namespace DAC
             return newValue;
         }
 
+        public static string Repeat(string value, int count)
+        {
+            return new StringBuilder(value.Length * count).Insert(0, value, count).ToString();
+        }
+
         private void ConvertDezHelper(ref string dezValue)
         {
             for (int n = 0; n < 8; n++)
             {
                 if (checkBox[n])
+                {
                     displayCount++;
+                }
             }
             int foundValue = 0;
 
             for (int n = 0; n < dezValue.Length; n++) // Shorten the value, if to long
             {
                 if (dezValue.Substring(n, 1) != ".")
+                {
                     foundValue++;
+                }
 
                 if (displayCount >= foundValue)
+                {
                     newValue += dezValue.Substring(n, 1);
+                }
             }
             dezValue = newValue;
 
             for (int n = 0; n < 8; n++) // Shift the value to the left
             {
                 if (!checkBox[n])
+                {
                     dezValue += " ";
+                }
                 else
+                {
                     break;
+                }
             }
             int numberDigit = 0;
 
             for (int n = 0; n < dezValue.Length; n++) // Get number of digits
             {
                 if (dezValue.Substring(n, 1) != ".")
+                {
                     numberDigit++;
+                }
             }
             segmentIndex = 0;
 
             for (int n = 0; n < dezValue.Length; n++)
             {
                 if (dezValue.Substring(n, 1) == ".")
+                {
                     checkBoxDP[numberDigit - segmentIndex] = true;
+                }
                 else
+                {
                     segmentIndex++;
+                }
             }
             newValue = "";
 
             for (int n = 0; n < dezValue.Length; n++) // Erase the dots
             {
                 if (dezValue.Substring(n, 1) != ".")
+                {
                     newValue += dezValue.Substring(n, 1);
+                }
             }
             dezValue = newValue;
+
+            if (useLeftPadding)
+            {
+                dezValue = Repeat("0", 8 - dezValue.Length) + dezValue;
+            }
 
             for (int n = 0; n < 8; n++)
             {
@@ -1784,78 +1734,113 @@ namespace DAC
 
                 try
                 {
-                    if (n < dezValue.Length && dezValue.Substring((dezValue.Length - 1) - n, 1) != " ")
+                    if (n < checkBox.Length)
+                    {
                         dezValueByte = Convert.ToInt32(dezValue.Substring((dezValue.Length - 1) - n, 1));
+                    }
                     else
                     {
                         dezValueByte = 0;
                         noValue = true;
                     }
                 }
-                catch (Exception f)
+                catch
                 {
-                    ImportExport.LogMessage("ConvertDezToSevenSegment ... " + f.ToString(), true);
                     dezValueByte = 0;
                     noValue = true;
                 }
-                digit[n] = ((checkBox[n] && !noValue) || (checkBox[n] && useLeftPadding && noValue)) ? SevenSegment.GetValuePattern(dezValueByte, checkBoxDP[n]) : SevenSegment.GetNonePattern();
+                if (noValue)
+                {
+                    digit[n] = SevenSegment.GetNonePattern(); // <----- HJP
+                }
+                else
+                {
+                    digit[n] = ((checkBox[n] && !noValue) || (checkBox[n] && useLeftPadding && noValue)) ? SevenSegment.GetValuePattern(dezValueByte, checkBoxDP[n]) : SevenSegment.GetNonePattern();
+                }
             }
         }
 
         private void ConvertDezToSevenSegment(ref DataRow row, ref string[] digit, string dezValue)
         {
+            dezValue = dezValue.Replace("\"", "").Replace(":",".");
+
             if (!Convert.ToBoolean(row["Active"]))
                 return;
-
-            //posDot = -1;
-            //numberDigit = 0;
-            displayCount = 0;
-            newValue = "";
-
-            checkBoxDP = new bool[8] { false, false, false, false, false, false, false, false };
-            checkBox = new bool[8];
-
-            checkBox[0] = Convert.ToBoolean(row["DisplayD0"]);
-            checkBox[1] = Convert.ToBoolean(row["DisplayD1"]);
-            checkBox[2] = Convert.ToBoolean(row["DisplayD2"]);
-            checkBox[3] = Convert.ToBoolean(row["DisplayD3"]);
-            checkBox[4] = Convert.ToBoolean(row["DisplayD4"]);
-            checkBox[5] = Convert.ToBoolean(row["DisplayD5"]);
-            checkBox[6] = Convert.ToBoolean(row["DisplayD6"]);
-            checkBox[7] = Convert.ToBoolean(row["DisplayD7"]);
-
-            if (dezValue.IndexOf("-", 0) > -1)
+            try
             {
-                dezValue = dezValue.Substring(dezValue.IndexOf("-", 0) + 1);
+                displayCount = 0;
+                newValue = "";
 
-                for (int n = 0; n < 8; n++)
-                    digit[n] = SevenSegment.GetNonePattern();
+                checkBoxDP = new bool[8] { false, false, false, false, false, false, false, false };
+                checkBox = new bool[8];
 
-                segmentIndex = -1;
+                checkBox[0] = Convert.ToBoolean(row["DisplayD0"]);
+                checkBox[1] = Convert.ToBoolean(row["DisplayD1"]);
+                checkBox[2] = Convert.ToBoolean(row["DisplayD2"]);
+                checkBox[3] = Convert.ToBoolean(row["DisplayD3"]);
+                checkBox[4] = Convert.ToBoolean(row["DisplayD4"]);
+                checkBox[5] = Convert.ToBoolean(row["DisplayD5"]);
+                checkBox[6] = Convert.ToBoolean(row["DisplayD6"]);
+                checkBox[7] = Convert.ToBoolean(row["DisplayD7"]);
+
+                for (int n = 0; n < checkBox.Length; n++)
+                {
+                    try
+                    {
+                        if (!checkBox[n]) { digit[n] = SevenSegment.GetNonePattern(); }
+                    }
+                    catch { }
+                }
+
+                for (int n = 0; n < dezValue.Length; n++)
+                {
+                    try
+                    {
+                        if (dezValue[n].ToString() == " ") { digit[n] = SevenSegment.GetNonePattern(); }
+                    }
+                    catch { }
+                }
+
+                if (dezValue == "" || dezValue == "-")
+                {
+                    for (int n = 0; n < digit.Length; n++)
+                    {
+                        try
+                        {
+                            digit[n] = SevenSegment.GetNonePattern();
+                        }
+                        catch { }
+                    }
+                    segmentIndex = -1;
+                }
+                else
+                {
+                    dezValue = dezValue.Replace(",", ".");
+                    dezValue = CheckLengthOfDisplayValue(ref row, dezValue);
+
+                    useLeftPadding = Convert.ToBoolean(row["LeftPadding"]);
+                    ConvertDezHelper(ref dezValue);
+                }
+                devAddress = row["ModulID"].ToString();
+                maskHex = "";
+
+                for (int n = 7; n > -1; n--)
+                {
+                    maskHex += checkBox[n] ? "1" : "0";
+                }
+
+                digitMask = Convert.ToInt32(maskHex, 2).ToString("X");
+
+                if (row["deviceIndex"] != DBNull.Value)
+                {
+                    arcazeDeviceIndex = Convert.ToInt32(row["deviceIndex"]);
+                    arcazeDevice[arcazeDeviceIndex].WriteDigitsToDisplayDriver(int.Parse(devAddress, NumberStyles.HexNumber), ref digit, int.Parse(digitMask, NumberStyles.HexNumber),
+                        checkBoxLog.Checked, Convert.ToBoolean(row["Reverse"]), ref segmentIndex, Convert.ToInt32(cbRefreshCycle.Text), Convert.ToInt32(cbDelayRefresh.Text));
+                }
             }
-            else
+            catch (Exception f)
             {
-                dezValue = dezValue.Replace(",", ".");
-                dezValue = CheckLengthOfDisplayValue(ref row, dezValue);
-
-                useLeftPadding = Convert.ToBoolean(row["LeftPadding"]);
-                ConvertDezHelper(ref dezValue);
-            }
-            devAddress = row["ModulID"].ToString();
-            maskHex = "";
-
-            for (int n = 7; n > -1; n--)
-            {
-                maskHex += checkBox[n] ? "1" : "0";
-            }
-
-            digitMask = Convert.ToInt32(maskHex, 2).ToString("X");
-
-            if (row["deviceIndex"] != DBNull.Value)
-            {
-                arcazeDeviceIndex = Convert.ToInt32(row["deviceIndex"]);
-                arcazeDevice[arcazeDeviceIndex].WriteDigitsToDisplayDriver(int.Parse(devAddress, NumberStyles.HexNumber), ref digit, int.Parse(digitMask, NumberStyles.HexNumber),
-                    checkBoxLog.Checked, Convert.ToBoolean(row["Reverse"]), ref segmentIndex, Convert.ToInt32(cbRefreshCycle.Text), Convert.ToInt32(cbDelayRefresh.Text));
+                ImportExport.LogMessage("ConvertDezToSevenSegment " + f.ToString(), true);
             }
         }
 
@@ -1864,7 +1849,6 @@ namespace DAC
             dezValueByte = 0;
             dezValue = textBoxDezValue.Text.Trim();
             noValue = false;
-            //posDot = 0;
             displayCount = 0;
             newValue = "";
 
@@ -1918,32 +1902,6 @@ namespace DAC
             }
         }
 
-        private int DropDownWidth(ComboBox comboBox)
-        {
-            int maxWidth = 0, temp = 0;
-            foreach (var obj in comboBox.Items)
-            {
-                temp = TextRenderer.MeasureText(obj.ToString(), comboBox.Font).Width;
-
-                if (temp > maxWidth)
-                    maxWidth = temp;
-            }
-            return maxWidth;
-        }
-
-        private int DropDownWidth(DataGridViewComboBoxColumn comboBox)
-        {
-            int maxWidth = 0, temp = 0;
-            foreach (var obj in comboBox.Items)
-            {
-                temp = comboBox.Items.ToString().Length;
-
-                if (temp > maxWidth)
-                    maxWidth = temp;
-            }
-            return maxWidth;
-        }
-
         private void ErasePulldown()
         {
             dataSetDisplaysLEDs.Tables["ClickableDisplay"].Clear();
@@ -1988,9 +1946,15 @@ namespace DAC
                                 dataRow = dtJson.NewRow();
 
                                 dataRow["Description"] = name;
-                                dataRow["Type"] = "ID";
+
+                                dataRow["Type"] = dtLamps.Rows[i]["Type"].ToString();
+                                if (dataRow["Type"].ToString() == "") { dataRow["Type"] = "ID"; }
+
                                 dataRow["ID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
-                                dataRow["Format"] = "float4";
+
+                                dataRow["Format"] = dtLamps.Rows[i]["Format"].ToString();
+                                if (dataRow["Format"].ToString() == "") { dataRow["Format"] = "decimal"; }
+
                                 dataRow["ExportID"] = dtLamps.Rows[i]["DCSExportID"].ToString();
 
                                 if (dtLamps.Rows[i]["Reverse"].ToString() == "False")
@@ -2039,9 +2003,14 @@ namespace DAC
 
                                     dataRow = dtJson.NewRow();
                                     dataRow["Description"] = name;
-                                    dataRow["Type"] = "ID";
-                                    dataRow["ID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
-                                    dataRow["Format"] = "float4";
+
+                                    dataRow["Type"] = dtDisplays.Rows[i]["Type"].ToString();
+                                    if (dataRow["Type"].ToString() == "") { dataRow["Type"] = "ID"; }
+
+                                    dataRow["ID"] = dtDisplays.Rows[i]["IDExportscript"].ToString();
+                                    if (dataRow["ID"].ToString() == "") { dataRow["ID"] = dtDisplays.Rows[i]["DCSExportID"].ToString(); }
+
+                                    dataRow["Format"] = dtDisplays.Rows[i]["Format"].ToString();
                                     dataRow["ExportID"] = dtDisplays.Rows[i]["DCSExportID"].ToString();
 
                                     if (dtDisplays.Rows[i]["Reverse"].ToString() == "False")
@@ -2152,19 +2121,10 @@ namespace DAC
 
                     if (listBox1.Items.Count > 2000)
                         listBox1.Items.RemoveAt(6);
-                    //if (checkBoxWriteLogsToHD.Checked)
-                    //    listBox3.Items.Add(ImportExport.log[i]);
                 }
                 try
                 {
                     ImportExport.log.Clear();
-
-                    //if (checkBoxWriteLogsToHD.Checked)
-                    //    ImportExport.WriteListBoxToFile(listBox3, logFile);
-
-                    //listBox3.Items.Clear();
-
-                    //listBox1.SelectedIndex = listBox1.Items.Count - 1;
                 }
                 catch (Exception e)
                 {
@@ -2185,6 +2145,57 @@ namespace DAC
             pin = (encoderNo * 2);  // encoder 0 => Pin 0/1; encoder 1 => Pin 2/3; encoder 2 => Pin 4/5 ....
         }
 
+        private void CockpitLoad(ref string receivedData)
+        {
+            try
+            {
+                if (GetIdent(searchStringForFile, ref receivedData))
+                {
+                    if (readFile.Length > 0)
+                    {
+                        readFile += ".xml";
+                        loadFile = true;
+                        timerMain.Interval = timerInterval / 5;
+                        timerstate = State.readNewFile;
+
+                        try
+                        {
+                            receivedDataBackup = receivedData.Substring(receivedData.IndexOf(searchStringForFile) + 5);
+                            receivedData = receivedDataBackup;
+                        }
+                        catch
+                        {
+                            receivedDataBackup = "";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { ImportExport.LogMessage("Load Cockpit: " + ex.ToString(), true); }
+        }
+
+        private bool GetIdent(string ID, ref string gotData)
+        {
+            string[] receivedItems = gotData.Split(':');
+
+            try
+            {
+                for (int n = 0; n < receivedItems.Length; n++)
+                {
+                    if (receivedItems[n].IndexOf(ID, 0) == 0)
+                    {
+                        readFile = receivedItems[n].Substring(receivedItems[n].IndexOf("=", 0) + 1);
+                        readFile = readFile.Replace('"'.ToString(), "");
+                        ImportExport.LogMessage("DCS start command for modul: " + readFile, true);
+                        json = "";
+                        return true;
+                    }
+                }
+            }
+            catch (Exception e) { ImportExport.LogMessage("GetCockpit problem .. " + e.ToString(), true); }
+
+            return false;
+        }
+
         private void GetConfigID(ref string gotData)
         {
             string[] receivedItems = gotData.Split(':');
@@ -2196,7 +2207,6 @@ namespace DAC
                     if (receivedItems[n].IndexOf("ConfigID=") != -1)
                     {
                         configID = Convert.ToInt32(receivedItems[n].Substring(receivedItems[n].IndexOf("=", 0) + 1));
-                        ImportExport.LogMessage("Got ConfigID: " + configID, true);
                         break;
                     }
                 }
@@ -2204,98 +2214,69 @@ namespace DAC
             catch (Exception e) { ImportExport.LogMessage("GetConfigID problem .. " + e.ToString(), true); }
         }
 
-        private string GrabValue(string ID, ref string gotData)
+        public void CheckReceivedItem()
         {
-            fragment = "";
-            posStart = 0;
-            posEnd = 0;
-            loadFile = false;
-
-            posStart = gotData.LastIndexOf(":" + ID + "=");
-
-            if (posStart == -1)
+            for (int i = 0; i < receivedItems.Length; i++)
             {
-                posStart = gotData.LastIndexOf("*" + ID + "=");
-
-                if (posStart == -1)
-                    return "";
-            }
-
-            //posStart = gotData.IndexOf(ID + "=", 0);
-            posStart += 1;
-
-            //if (posStart > -1) // ID found ?
-            //{
-            fragment = gotData.Substring(posStart); // 44=1.0:ACC01=0.0: ....
-            posEnd = fragment.IndexOf(":", 0);
-
-            if (posEnd == -1)
-                posEnd = fragment.IndexOf(newline, 0);
-
-            if (posEnd > -1)
-            {
-                fragment = fragment.Substring(0, posEnd); // 44=1.0
-                fragmentID = fragment.Substring(0, fragment.IndexOf("=", 0) - 1);
-
-                if (fragment.IndexOf(searchStringForFile) > -1)
-                    loadFile = true;
-
-                if (checkBoxLog.Checked)
-                    ImportExport.LogMessage("Processing value: --> " + fragment + " <--", true);
-
-                posStart = fragment.IndexOf("=", 0);
-                fragment = fragment.Substring(posStart + 1); // 1.0
-
-                posEnd = fragment.IndexOf(";", 0);
-
-                if (posEnd > -1)
-                    fragment = fragment.Substring(0, posEnd);
-
-                fragment = fragment.Trim();
-
-                if (checkBoxLog.Checked)
-                    ImportExport.LogMessage("Send       value: --> " + fragment.Trim() + " <--", true);
-
-                if (loadFile)
+                try
                 {
-                    readFile = fragment;
-                    timerMain.Interval = timerInterval / 5;
-                    timerstate = State.readfile;
-                    try
+                    if (receivedItems[i].IndexOf(start) > 0)
                     {
-                        receivedDataBackup = receivedData.Substring(receivedData.IndexOf(searchStringForFile) + 5);
-                        receivedData = receivedDataBackup;
+                        for (int n = 1; n < receivedItems.Length - i; n++)
+                        {
+                            if (receivedItems[i + n].IndexOf(start) > 0 || receivedItems[i + n].IndexOf("=0") > 0 || receivedItems[i + n].IndexOf("=1") > 0 ||
+                                     receivedItems[i + n].IndexOf("=-0") > 0 || receivedItems[i + n].IndexOf("=-1") > 0 || receivedItems[i + n].IndexOf("=-2") > 0 ||
+                                     receivedItems[i + n].IndexOf("=2") > 0 || receivedItems[i + n].IndexOf("=3") > 0 || receivedItems[i + n].IndexOf("=4") > 0 ||
+                                     receivedItems[i + n].IndexOf("=5") > 0 || receivedItems[i + n].IndexOf("=6") > 0 || receivedItems[i + n].IndexOf("=7") > 0 ||
+                                     receivedItems[i + n].IndexOf("=8") > 0 || receivedItems[i + n].IndexOf("=9") > 0 || receivedItems[i + n].IndexOf("=\"") > 0)
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                if (receivedItems[i + n] != "" && receivedItems[i + n] != "\r\n")
+                                {
+                                    receivedItems[i] += ":" + receivedItems[i + n];
+                                    receivedItems[i + n] = "";
+                                }
+                            }
+                        }
                     }
-                    catch
-                    {
-                        receivedDataBackup = "";
-                    }
-                    stop = true;
-                    return "";
                 }
-                else
+                catch
+                { }
+            }
+        }
+
+        private string GrabValue()
+        {
+            try
+            {
+                idFound = false;
+
+                if (receivedData.IndexOf(dcsExportID, 0) > -1) // Dirty quickcheck before loop
                 {
-                    digitString = "";
+                    idFound = true;
 
-                    for (int n = 0; n < fragment.Length; n++)
+                    for (int n = 0; n < receivedItems.Length; n++)
                     {
-                        characterValue = (byte)Convert.ToChar(fragment.Substring(n, 1));
-
-                        if (characterValue >= 44 && characterValue <= 57 && characterValue != 47)
-                            digitString += fragment.Substring(n, 1);
+                        if (receivedItems[n].IndexOf(dcsExportID, 0) == 0)
+                        {
+                            return receivedItems[n].Substring(receivedItems[n].IndexOf("=", 0) + 1).Replace(("\r"), string.Empty).Replace("\n", string.Empty).Replace("\t", string.Empty);
+                        }
                     }
-                    return digitString;
                 }
             }
-            if (checkBoxLog.Checked)
-                ImportExport.LogMessage(" ID --> " + ID + " <-- Value not found.", true);
+            catch (Exception e)
+            {
+                ImportExport.LogMessage("GrabValue problem .. " + e.ToString(), true);
+            }
 
-            return "";
+           return "";
         }
 
         private void GrabValues()
         {
-            gotData = receivedData;
             arcazeFromGrid = "";
 
             if (receivedData.IndexOf("ConfigID=") != -1)
@@ -2303,16 +2284,37 @@ namespace DAC
                 GetConfigID(ref receivedData);
             }
 
-            newValue = GrabValue(searchStringForFile, ref gotData);
+            if (receivedData.IndexOf(searchStringForFile) != -1)
+            {
+                CockpitLoad(ref receivedData);
+            }
 
             if (loadFile)
+            {
                 return;
+            }
+            if (receivedData.IndexOf(@"DCS=""Stop""") != -1)
+            {
+                ImportExport.LogMessage(@"DCS=""Stop""", true);
+
+                ImportExport.LogMessage("Reset configID = -1", true);
+
+                configID = -1;
+                timerstate = State.init;
+
+                MemoryManagement.Reduce();
+                return;
+            }
+
+            receivedItems = receivedData.Split(':');
+
+            CheckReceivedItem();
 
             if (dataGridViewArcaze.Rows.Count > 0)
             {
                 #region Displays
 
-                for (int n = 0; n < dataGridViewDisplays.RowCount; n++) // ****** Displays *******
+                for (int n = 0; n < dataGridViewDisplays.RowCount; n++)
                 {
                     if (Convert.ToBoolean(dataGridViewDisplays.Rows[n].Cells["activeDisplaysCheckBox"].Value) &&
                         Convert.ToBoolean(dataGridViewDisplays.Rows[n].Cells["displayInit"].Value))
@@ -2320,21 +2322,32 @@ namespace DAC
                         if (dataGridViewDisplays.Rows[n].Cells["arcazeDisplays"].Value != DBNull.Value &&
                             dataGridViewDisplays.Rows[n].Cells["arcazeDisplays"].Value != null
                         )
+                        {
                             arcazeFromGrid = dataGridViewDisplays.Rows[n].Cells["arcazeDisplays"].Value.ToString();
+                        }
                         else
+                        {
                             arcazeFromGrid = "";
-
+                        }
                         if (arcazeFromGrid != "")
                         {
                             if (dataGridViewDisplays.Rows[n].Cells["dcsExportIDDisplays"].Value != DBNull.Value)
+                            {
                                 dcsExportID = dataGridViewDisplays.Rows[n].Cells["dcsExportIDDisplays"].Value.ToString();
+                            }
                             else
+                            {
                                 dcsExportID = "";
-
+                            }
                             if (dcsExportID != "")
-                                newValue = GrabValue(dcsExportID, ref gotData); // grab the value
+                            {
+                                newValue = GrabValue();
+                                newValue = newValue.Replace("\"", "");
+                            }
                             else
+                            {
                                 newValue = "";
+                            }
 
                             if (newValue != "")
                             {
@@ -2372,7 +2385,10 @@ namespace DAC
                             dcsExportID = dataGridViewLEDs.Rows[n].Cells["dcsExportIDLEDs"].Value.ToString();
 
                             if (dcsExportID != "")
-                                newValue = GrabValue(dcsExportID, ref gotData);
+                            {
+                                newValue = GrabValue();
+                                newValue = newValue.Replace("\"", "");
+                            }
                             else
                                 newValue = "";
 
@@ -2465,9 +2481,11 @@ namespace DAC
 
         private void InitDrivers()
         {
-            if (arcazeDevice != null)
-                arcazeDevice.Clear();
-
+            if (!debug)
+            {
+                if (arcazeDevice != null)
+                    arcazeDevice.Clear();
+            }
             InitDisplaysDrivers();
             InitLEDDrivers();
 
@@ -2679,19 +2697,6 @@ namespace DAC
 
                 dataSetConfig.AcceptChanges();
 
-
-                //for (int n = 0; n < dataSetDisplaysLEDs.Tables["Arcaze"].Rows.Count; n++)
-                //{
-                //    dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["Active"] = false;
-
-                //    if (dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"].ToString() == "2") // repair
-                //        dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"] = "LED-Driver 2";
-                //    if (dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"].ToString() == "3")
-                //        dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"] = "LED-Driver 3";
-                //    if (dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"].ToString() == "4")
-                //        dataSetDisplaysLEDs.Tables["Arcaze"].Rows[n]["ModulTypID"] = "Arcaze USB";
-                //}
-
                 for (int n = 0; n < dataSetDisplaysLEDs.Tables["Displays"].Rows.Count; n++)
                 {
                     dataSetDisplaysLEDs.Tables["Displays"].Rows[n]["Init"] = false;
@@ -2875,7 +2880,9 @@ namespace DAC
                         for (int m = 0; m < arcazeDevice.Count; m++)
                         {
                             if (arcazeDevice[m].GetSerial == arcazeHid.Info.Serial)
+                            {
                                 return m;
+                            }
                         }
                         arcazeDevice.Add(new ArcazeDevice(arcazeHid.Info));
                         return (arcazeDevice.Count - 1);
@@ -3132,8 +3139,9 @@ namespace DAC
                     package = "C" + deviceID + "," + (3000 + buttonID).ToString() + "," + sendValue.ToString().Replace(",", ".");
 
                     if (checkBoxLog.Checked)
+                    {
                         ImportExport.LogMessage(GetActiveArcazeName() + " - Send package to IP: " + textBoxIP.Text.Trim() + " - Port: " + textBoxPortSender.Text + " - Package: " + package, true);
-
+                    }
                     UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), package);
                 }
                 catch (Exception f)
@@ -3143,12 +3151,39 @@ namespace DAC
             }
         }
 
+        private void RefreshAllDatagrids()
+        {
+            try
+            {
+                dataGridViewDisplays.Refresh();
+                dataGridViewDisplays.Update();
+
+                dataGridViewLEDs.Refresh();
+                dataGridViewLEDs.Update();
+
+                dataGridViewSwitches.Refresh();
+                dataGridViewSwitches.Update();
+
+                dataGridViewEncoderValues.Refresh();
+                dataGridViewEncoderValues.Update();
+
+                dataGridViewEncoderSend.Refresh();
+                dataGridViewEncoderSend.Update();
+
+                dataGridViewADC.Refresh();
+                dataGridViewADC.Update();
+            }
+            catch { }
+        }
+
         private void RefreshPulldown()
         {
             RefreshExportDisplay();
             RefreshExportLED();
             RefeshClickableRotary();
             RefeshClickableSwitch();
+
+            RefreshAllDatagrids();
         }
 
         private void RefreshExportDisplay()
@@ -3205,23 +3240,6 @@ namespace DAC
                 dataSetDisplaysLEDs.Tables["ClickableSwitch"].Rows.Add(rows[n][0], rows[n][3]);
             }
             dataSetDisplaysLEDs.Tables["ClickableSwitch"].AcceptChanges();
-        }
-
-        private uint ResolutionValue(int resolution)
-        {
-            switch (resolution)
-            {
-                case 2:
-                    return 3;
-                case 4:
-                    return 15;
-                case 8:
-                    return 255;
-                case 10:
-                    return 1023;
-                default:
-                    return 1;
-            }
         }
 
         private void SaveConfig()
@@ -3335,7 +3353,7 @@ namespace DAC
 
                     if (dcsExportID != null && dcsExportID != "")
                     {
-                        receivedData = ":" + dcsExportID + "= 1:";
+                        receivedData = ":" + dcsExportID + "\"= 1\":";
 
                         GrabValues();
                         receivedData = "";
@@ -3365,7 +3383,7 @@ namespace DAC
 
                     if (dcsExportID != null && dcsExportID != "")
                     {
-                        receivedData = ":" + dcsExportID + "=" + (onValue ? "1" : "0") + ":";
+                        receivedData = ":" + dcsExportID + "=\"" + (onValue ? "1" : "0") + "\":";
 
                         GrabValues();
                         receivedData = "";
@@ -3388,7 +3406,7 @@ namespace DAC
                 {
                     if (dcsExportID != null && dcsExportID != "")
                     {
-                        receivedData = ":" + dcsExportID + "=" + (onValue ? "88888888" : "-") + ":";
+                        receivedData = ":" + dcsExportID + "=\"" + (onValue ? "88888888" : "-") + "\":";
                         GrabValues();
                         receivedData = "";
                     }
@@ -3399,8 +3417,6 @@ namespace DAC
                 }
             }
             stop = false;
-            buttonStop.Text = (stop ? "Start" : "Stop");
-            buttonStop.ForeColor = (stop ? Color.Green : Color.Red);
         }
 
         private void SystemCheck()
@@ -3437,7 +3453,6 @@ namespace DAC
                 for (int n = 0; n < rows2.Length; n++)
                 {
                     rows = dataSetDisplaysLEDs.Tables["Clickabledata"].Select("ID='" + rows2[n][1] + "'");
-                    //temp = rows2[n][1].ToString();
 
                     if (rows.Length > 0)
                     {
@@ -3455,7 +3470,6 @@ namespace DAC
                 for (int n = 0; n < rows2.Length; n++)
                 {
                     rows = dataSetDisplaysLEDs.Tables["Clickabledata"].Select("ID='" + rows2[n][10] + "'");
-                    //temp = rows2[n][10].ToString();
 
                     if (rows.Length > 0)
                     {
@@ -3511,24 +3525,32 @@ namespace DAC
         private bool ActivateArcaze(ref string arcazeNew, bool log = true)
         {
             if (arcazeNew == "")
+            {
                 return false;
+            }
 
             if (arcazeAddress == arcazeNew)
+            {
                 return true;
+            }
 
             rows = new DataRow[] { };
             //rows = dataSetDisplaysLEDs.Tables["Arcaze"].Select("Arcaze='" + arcazeNew + "'");
             rows = dataSetDisplaysLEDs.Tables["Arcaze"].Select("SerialNumber='" + arcazeNew + "'");
 
             if (rows.Length == 0)
+            {
                 return false;
+            }
 
             for (int n = 0; n < rows.Length; n++)
             {
                 arcazeActive = Convert.ToBoolean(rows[n]["Active"]);
 
                 if (!arcazeActive)
+                {
                     return false;
+                }
             }
 
             if (arcazeNew != arcazeAddress)
@@ -3540,13 +3562,19 @@ namespace DAC
                         try
                         {
                             if (checkBoxLog.Checked && arcazeHid.Info.Connected && log)
+                            {
                                 ImportExport.LogMessage("Disconnect " + arcazeHid.Info.DeviceName + " (" + arcazeHid.Info.Serial + ")", true);
+                            }
 
                             if (arcazeHid.Info.Connected)
+                            {
                                 arcazeHid.Disconnect();
+                            }
 
                             if (checkBoxLog.Checked && log)
+                            {
                                 ImportExport.LogMessage("Connect " + presentArcaze[n].DeviceName + " (" + presentArcaze[n].Serial + ")", true);
+                            }
 
                             this.arcazeHid.Connect(presentArcaze[n].Path);
 
@@ -3562,7 +3590,9 @@ namespace DAC
                 return false;
             }
             else
+            {
                 return true;
+            }
         }
 
         private void ChangeArcase(string presentArcazePath)
@@ -3579,7 +3609,9 @@ namespace DAC
         private void DisconnectArcaze()
         {
             if (arcazeHid.Info.Connected)
+            {
                 arcazeHid.Disconnect();
+            }
         }
 
         private ArcazeCommand.OutputOperators GetOutputOperator()
@@ -3599,13 +3631,25 @@ namespace DAC
             //}
         }
 
-        private bool FindAllArcaze() //+++++
+        private bool FindAllArcaze() 
         {
-            allArcaze = new List<DeviceInfo>(8);
+            allArcaze = new List<DeviceInfo>(16);
 
-            arcazeHid.Find(allArcaze);
-            presentArcaze = arcazeHid.RemoveSameSerialDevices(allArcaze);
-
+            if (debug)
+            {
+                presentArcaze.Clear();
+                presentArcaze.Add(new DeviceInfo());
+                presentArcaze.Add(new DeviceInfo());
+                presentArcaze[0].Serial = "000413300000";
+                presentArcaze[0].DeviceName = "000413300000";
+                presentArcaze[1].Serial = "000414900000";
+                presentArcaze[1].DeviceName = "000414900000";
+            }
+            else
+            {
+                arcazeHid.Find(allArcaze);
+                presentArcaze = arcazeHid.RemoveSameSerialDevices(allArcaze);
+            }
             ComboBoxArcaze.Items.Clear();
             ComboBoxArcaze.Text = "";
 
@@ -3647,7 +3691,7 @@ namespace DAC
                 ComboBoxArcaze.SelectedIndex = 0;
                 arcazeHid.Connect(presentArcaze[0].Path);
             }
-            return (presentArcaze.Count > 0);
+            return presentArcaze.Count > 0;
         }
 
         private void RepairDatabaseForArcaze(string arcazeName, string serialNumber)
@@ -3711,7 +3755,9 @@ namespace DAC
             try
             {
                 if (checkBoxLog.Checked)
+                {
                     ImportExport.LogMessage("CmdReset() ", true);
+                }
 
                 arcazeHid.Command.CmdReset();
             }
@@ -3720,88 +3766,6 @@ namespace DAC
                 ImportExport.LogMessage("arcazeHid.ArcazeCommands.Reset() .. " + e.ToString(), true);
             }
         }
-
-        #endregion
-
-        #region Display
-
-        /// <summary>
-        /// Init a display driver
-        /// </summary>
-        /// <param name="devAdress">The unique device address of the Display Module (set by the rotary switch on the board)</param>
-        /// <param name="decodeMode">0x00 = No decoding / 0xFF = Code B Decoding (only lower data nibble used then), default = 0x00</param>
-        /// <param name="intensity">0x00 ... 0x0F</param>
-        /// <param name="scanLimit">4 ... 8 allowed (default = 8, no need to change)</param>
-        //private void InitDisplayDriver(int devAdress, int decodeMode, int intensity, int scanLimit)
-        //{
-        //    if (arcazeHid == null || !arcazeHid.Info.Connected || !arcazeFound)
-        //        return;
-
-        //    try
-        //    {
-        //        ImportExport.LogMessage("CmdMax7219DisplayInit(Modul: " + devAdress.ToString("X2") + ", decodeMode:" + decodeMode.ToString("X2") + ", intensity: "
-        //            + intensity.ToString("X2") + ", scanLimit: " + scanLimit.ToString("X2") + ")", true);
-
-        //        arcazeHid.Command.CmdMax7219DisplayInit(devAdress, decodeMode, intensity, scanLimit);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        ImportExport.LogMessage("CmdMax7219DisplayInit(Modul: " + devAdress.ToString("X2") + ", decodeMode:" + decodeMode.ToString("X2") + ", intensity: "
-        //            + intensity.ToString("X2") + ", scanLimit: " + scanLimit.ToString("X2") + ") .. " + e.ToString(), true);
-        //    }
-        //}
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="devAdress">0 .. 15</param>
-        /// <param name="digit">SevenSegment Value</param>
-        /// <param name="digitMask">0x00 .. 0xFF</param>
-        //private void WriteDigitsToDisplayDriver(int devAdress, ref string[] digit, int digitMask)
-        //{
-        //    Digits = new List<byte>(8);
-
-        //    Digits.Add(byte.Parse(digit[0], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[1], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[2], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[3], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[4], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[5], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[6], NumberStyles.HexNumber));
-        //    Digits.Add(byte.Parse(digit[7], NumberStyles.HexNumber));
-
-        //    try
-        //    {
-        //        if (arcazeHid == null || !arcazeHid.Info.Connected || !arcazeFound)
-        //            return;
-
-        //        arcazeHid.Command.CmdMax7219WriteDigits(devAdress, Digits, digitMask);
-
-        //        if (checkBoxLog.Checked)
-        //        {
-        //            digitsValue = "";
-
-        //            for (int n = 7; n > -1; n--)
-        //            {
-        //                digitsValue += Digits[n].ToString("X2") + " ";
-        //            }
-        //            if (checkBoxLog.Checked)
-        //                ImportExport.LogMessage("CmdMax7219WriteDigits(Modul: " + devAdress.ToString("X2") + ", Digits: " + digitsValue + ", Mask: " + (digitMask).ToString("X2") + ")", true);
-        //        }
-
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        String digitsValue = "";
-
-        //        for (int n = 0; n < 8; n++)
-        //        {
-        //            digitsValue = Digits[n].ToString() + " ";
-        //        }
-        //        ImportExport.LogMessage("CmdMax7219WriteDigits(Modul: " + devAdress.ToString("X2") + ", Digits: " + digitsValue + ", Mask: " + (digitMask).ToString("X2")
-        //             + ") .. " + e.ToString(), true);
-        //    }
-        //}
 
         #endregion
 
@@ -3939,7 +3903,9 @@ namespace DAC
             encoderNewValue = (encoderPinAvalue * 2) + encoderPinBvalue;
 
             if (encoderNewValue == encoderOldValue)
+            {
                 return 0;
+            }
 
             encoderOldValue = 3;
 
@@ -3952,7 +3918,9 @@ namespace DAC
         private void ReadEncoderPinsValues(int port, int pin, ref int pinAvalue, ref int pinBvalue)
         {
             if (arcazeHid == null || !arcazeHid.Info.Connected || !arcazeFound)
+            {
                 return;
+            }
 
             try
             {
@@ -3977,7 +3945,9 @@ namespace DAC
             try
             {
                 if (arcazeHid == null || !arcazeHid.Info.Connected || !arcazeFound)
+                {
                     return;
+                }
 
                 value = arcazeHid.Command.CmdReadPort(port);
 
@@ -3986,7 +3956,9 @@ namespace DAC
                 value = Convert.ToInt32(pattern.Substring(pattern.Length - 1));
 
                 if (!reverse)
+                {
                     value = (value == 1 ? 0 : 1); // Invert it
+                }
             }
             catch (Exception f)
             {
@@ -3994,16 +3966,12 @@ namespace DAC
             }
         }
 
-        /// <summary>
-        /// Set the pin direction on the arcaze
-        /// </summary>
-        /// <param name="port">Connector A = 0;B = 1;C = 2</param>
-        /// <param name="pin">0 - 19</param>
-        /// <param name="direction">0 = input; 1 = output</param>
         private void SetPinDirection(int port, int pin, int direction)
         {
             if (arcazeHid == null || !arcazeHid.Info.Connected || !arcazeFound)
+            {
                 return;
+            }
 
             try
             {
@@ -4020,33 +3988,6 @@ namespace DAC
         #endregion
 
         #region events
-
-        //private void DeviceRemoved(object sender, HidEventArgs hidEventsArgs)
-        //{
-        //    this.arcazeHid.Disconnect();
-        //    arcazeFound = false;
-        //    timerstate = State.startup;
-        //}
-
-        //private void OurDeviceRemoved(object sender, HidEventArgs hidEventsArgs)
-        //{
-        //    this.arcazeHid.Disconnect();
-        //    arcazeFound = false;
-        //    timerstate = State.startup;
-        //}
-
-        //private void DeviceReceived(object sender, HidEventArgs hidEventsArgs)
-        //{
-        //    //this.arcazeHid.Connect(hidEventsArgs.DeviceInfo.Path);
-        //    arcazeFound = false;
-        //    timerstate = State.startup;
-        //}
-
-        //private void OurDeviceReceived(object sender, HidEventArgs hidEventsArgs)
-        //{
-        //    arcazeFound = false;
-        //    timerstate = State.startup;
-        //}
 
         private void ArcazeChanged(object sender, EventArgs e)
         {
@@ -4097,6 +4038,8 @@ namespace DAC
         private void ButtonLogClear_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            ImportExport.LogMessage(labelVersion.Text, true);
+            ImportExport.LogMessage("Used configuration file '" + textBoxLastFile.Text + "'", true);
         }
 
         private void ButtonOpenFile_Click(object sender, EventArgs e)
@@ -4129,13 +4072,25 @@ namespace DAC
                 this.Text = this.Text.Substring(0, (this.Text.IndexOf("(") - 1)) + "  (Config. with " + textBoxLastFile.Text + ")";
 
                 ImportExport.DatasetToXml("config.xml", dataSetConfig);
+
+                if (arcazeFound)
+                {
+                    timerstate = State.sendConfig;
+                }
+                else
+                {
+                    timerstate = State.init;
+                }
+                timerMain.Interval = timerInterval;
             }
         }
 
         private void ButtonPackage_Click(object sender, EventArgs e)
         {
             if (textBoxTestDataPackage.Text.Trim().Length > 0)
+            {
                 receivedData = textBoxTestDataPackage.Text;
+            }
         }
 
         private void ButtonReadADC_Click(object sender, EventArgs e)
@@ -4156,22 +4111,12 @@ namespace DAC
             trackBarADC6.Value = adcValue[5] / resolution;
         }
 
-        private void ButtonReadEncoderAbs_Click(object sender, EventArgs e)
-        {
-            //ReadEncoderAbsolute();
-            //SetEnconderValue();
-        }
-
-        private void ButtonReadEncoderRel_Click(object sender, EventArgs e)
-        {
-            //ReadEncoderRelative();
-            //SetEnconderValue();
-        }
-
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             if (arcazeHid == null || !arcazeHid.Info.Connected)
+            {
                 return;
+            }
 
             timerstate = State.reset;
         }
@@ -4233,7 +4178,10 @@ namespace DAC
 
                         case "LED-Driver 3":
                             if (comboBoxLEDValue.Text == "")
+                            {
                                 comboBoxLEDValue.Text = "1.00";
+                            }
+
                             resolution = 8;
                             pinString = comboBoxLEDValue.Text.Replace(",", ".");
 
@@ -4261,13 +4209,20 @@ namespace DAC
         private void ButtonStop_Click(object sender, EventArgs e)
         {
             stop = !stop;
-            buttonStop.Text = (stop ? "Start" : "Stop");
-            buttonStop.ForeColor = (stop ? Color.Green : Color.Red);
 
-            if (stop)
-                ImportExport.LogMessage("Package processing stopped .. ", true);
-            else
-                ImportExport.LogMessage("Package processing restarted .. ", true);
+            if (stop && configID != -1)
+            {
+                UDP.UDPSender(textBoxIP.Text.Trim(), Convert.ToInt32(textBoxPortSender.Text), "S" + configID);
+                ImportExport.LogMessage("Package processing stopped .. " + "S" + configID, true);
+                configID = -1;
+                SwitchAll(off);
+                stop = true;
+            }
+            timerMain.Interval = timerInterval;
+            timerstate = State.sendConfig;
+
+            buttonStop.Text = stop ? "Start" : "Stop";
+            buttonStop.ForeColor = (stop ? Color.Green : Color.Red);
         }
 
         private void ButtonWriteDigits_Click(object sender, EventArgs e)
@@ -4285,7 +4240,9 @@ namespace DAC
                     characterValue = (byte)Convert.ToChar(textBoxDezValue.Text.Substring(n, 1));
 
                     if (characterValue >= 44 && characterValue <= 57 && characterValue != 47)
+                    {
                         digitString += textBoxDezValue.Text.Substring(n, 1);
+                    }
                 }
                 textBoxDezValue.Text = digitString;
 
@@ -4301,7 +4258,10 @@ namespace DAC
 
         private void CheckBoxLog_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxLog.Checked) logDetail = true;
+            if (checkBoxLog.Checked)
+            {
+                logDetail = true;
+            }
             else { logDetail = false; }
         }
 
@@ -4318,9 +4278,13 @@ namespace DAC
         private void ComboBoxLEDModul_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxModul.SelectedIndex == 0)
+            {
                 comboBoxConnector.SelectedIndex = 0;
+            }
             else
+            {
                 comboBoxConnector.SelectedIndex = 2;
+            }
         }
 
         private void ComboBoxArcaze_SelectedIndexChanged(object sender, EventArgs e)
@@ -4338,7 +4302,9 @@ namespace DAC
             arcaze = ComboBoxArcaze.Text;
 
             if (arcaze != "")
+            {
                 ActivateArcaze(ref arcaze, false);
+            }
         }
 
         private void ComboBoxModuleType_SelectedIndexChanged(object sender, EventArgs e)
@@ -4397,12 +4363,6 @@ namespace DAC
 
         }
 
-        private void DataGridViewClickable_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            //DataGridViewRow row = dataGridViewClickable.Rows[e.RowIndex];
-            //row.Cells[3].Value = "D " + row.Cells[0].Value + " - " + "B " + row.Cells[1].Value + " - " + row.Cells[2].Value;
-        }
-
         private void DataGridViewClickable_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
 
@@ -4411,12 +4371,16 @@ namespace DAC
         private void DataGridViewDisplays_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (!arcazeFound)
+            {
                 return;
+            }
 
             DataGridViewRow row = dataGridViewDisplays.Rows[e.RowIndex];
 
             if (e.ColumnIndex > 1 && e.ColumnIndex < 7 && e.ColumnIndex != 3)
+            {
                 buttonInit.Visible = true;
+            }
 
             if (e.ColumnIndex == 3)
             {
@@ -4424,11 +4388,6 @@ namespace DAC
                 checkTest = Convert.ToBoolean(row.Cells["displayTest"].Value);
                 receivedData = ":" + dcsExportID + "=" + (checkTest ? "88888888" : "-") + ":";
             }
-        }
-
-        private void DataGridViewDisplays_ColumnDividerDoubleClick(object sender, DataGridViewColumnDividerDoubleClickEventArgs e)
-        {
-
         }
 
         private void DataGridViewDisplays_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -4451,14 +4410,18 @@ namespace DAC
             DataGridViewRow row = dataGridViewEncoderValues.Rows[e.RowIndex];
 
             if (row.Cells["arcaze_Encoder"].Value != null && row.Cells["Encoder_Number"].Value != null)
+            {
                 row.Cells["ArcazeAndEncoder"].Value = row.Cells["arcaze_Encoder"].Value.ToString() + " - " + row.Cells["Encoder_Number"].Value.ToString();
+            }
             //dataGridViewEncoderSend.Refresh();
         }
 
         private void DataGridViewEncoderValues_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex > 2 && e.ColumnIndex < 7 && arcazeFound)
+            {
                 buttonInit.Visible = true;
+            }
         }
 
         private void DataGridViewEncoderValues_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -4475,12 +4438,16 @@ namespace DAC
         private void DataGridViewLEDs_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (!arcazeFound)
+            {
                 return;
+            }
 
             DataGridViewRow row = dataGridViewLEDs.Rows[e.RowIndex];
 
             if (e.ColumnIndex > 3 && e.ColumnIndex < 11)
+            {
                 buttonInit.Visible = true;
+            }
 
             if (e.ColumnIndex == 3) // Send test package
             {
@@ -4529,7 +4496,9 @@ namespace DAC
         private void DataGridViewKeystrokes_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex > 1 && e.ColumnIndex < 6 && arcazeFound)
+            {
                 buttonInit.Visible = true;
+            }
         }
 
         private void DataGridViewKeystrokes_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -4540,7 +4509,9 @@ namespace DAC
         private void DataGridViewSwitches_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex > 1 && e.ColumnIndex < 9 && arcazeFound)
+            {
                 buttonInit.Visible = true;
+            }
         }
 
         private void DataGridViewSwitches_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -4576,21 +4547,6 @@ namespace DAC
             }
             catch { }
         }
-
-        //private void LinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        //{
-        //    if (linkLabel1.Text.Substring(0, 4).ToUpper() == "HTTP")
-        //    {
-        //        try
-        //        {
-        //            Process.Start(linkLabel1.Text);
-        //        }
-        //        catch (Exception f)
-        //        {
-        //            ImportExport.LogMessage("LinkLabel_LinkClicked ... " + f.ToString(), true);
-        //        }
-        //    }
-        //}
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -4633,6 +4589,24 @@ namespace DAC
         private void TrackBarLEDDriverBrightness_Scroll(object sender, EventArgs e)
         {
             SetPinDirectionForLEDs();
+        }
+
+        private void CheckBoxDebug_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxDebug.Checked)
+            {
+                debug = true;
+                arcazeFound = true;
+                //timerstate = State.initConfig;
+                timerstate = State.startup;
+            }
+            else
+            {
+                debug = false;
+                arcazeFound = false;
+                timerstate = State.startup;
+            }
+            timerMain.Interval = timerInterval;
         }
 
         #endregion

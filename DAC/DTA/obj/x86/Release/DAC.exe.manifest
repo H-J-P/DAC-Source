@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Ikarus_64.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="DAC" version="0.9.8.9" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="DAC" version="0.9.9.30" language="neutral" processorArchitecture="x86" />
     <commandLine file="DAC.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -70,14 +70,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAC.exe" size="775168">
-      <assemblyIdentity name="DAC" version="0.9.8.9" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAC.exe" size="785920">
+      <assemblyIdentity name="DAC" version="0.9.9.30" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>UzUwGY4gXsrQiRSghZ9J1H2LeQI=</dsig:DigestValue>
+        <dsig:DigestValue>APlvmeVoVrtFWIK5afbSX7xpons=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -49,7 +49,7 @@ namespace DAC
             xlWBATWorksheet
         }
 
-        static string newline = System.Environment.NewLine;
+        static readonly string newline = System.Environment.NewLine;
         public static List<string> log = new List<string>();
         private static int prozessID;
 
@@ -168,9 +168,9 @@ namespace DAC
             catch { }
         }
 
-        public static void DatasetToXml(String fileName, DataSet ds)
+        public static void DatasetToXml(string fileName, DataSet ds)
         {
-            String fileLoction = "";
+            string fileLoction = "";
 
             if (fileName.IndexOf("\\") > 0)
                 fileLoction = fileName;
@@ -385,25 +385,38 @@ namespace DAC
             return 0;
         }
 
-        public static void XmlToDataSet(String fileName, DataSet ds)
+        public static void XmlToDataSet(string fileName, DataSet ds)
         {
             if (ds == null)
+            {
                 return;
+            }
 
-            String fileLoction = "";
+            //ds.Reset();
+
+            string fileLoction = "";
 
             if (fileName.IndexOf("\\") > 0)
+            {
                 fileLoction = fileName;
+            }
             else
-                fileLoction = System.Windows.Forms.Application.StartupPath + "\\" + fileName;
+            {
+                fileLoction = Application.StartupPath + "\\" + fileName;
+            }
 
             try
             {
+                ds.Clear();
+                ds.AcceptChanges();
+
                 ds.ReadXml(fileLoction);
+
+                ds.AcceptChanges();
             }
             catch (Exception e)
             {
-                LogMessage("XmlToDataSet (read file to dataset): " + fileName + " ... " + e.ToString()/*.Substring(0,100)*/, true);
+                LogMessage("XmlToDataSet (read file to dataset): " + fileName + " ... " + e.ToString(), true);
             }
         }
 

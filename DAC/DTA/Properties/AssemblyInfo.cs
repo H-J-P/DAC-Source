@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -8,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("D.A.C. - DCS Arcaze Communicator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Heinz-Joerg Puhlmann")]
+[assembly: AssemblyCompany("H.J.P")]
 [assembly: AssemblyProduct("D.A.C. - DCS Arcaze Communicator")]
-[assembly: AssemblyCopyright("Copyright © Heinz-Joerg Puhlmann")]
+[assembly: AssemblyCopyright("Copyright © 2020 H.J.P@Posteo.de")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.9.8.9")]
-[assembly: AssemblyFileVersion("0.9.8.9")]
+[assembly: AssemblyVersion("1.5.0.7")]
+[assembly: AssemblyFileVersion("1.5.0.7")]

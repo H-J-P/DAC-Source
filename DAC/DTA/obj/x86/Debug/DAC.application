@@ -3,15 +3,18 @@
   <assemblyIdentity name="DAC.application" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="Heinz-Joerg Puhlmann" asmv2:product="D.A.C. - DCS Arcaze Communicator" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.5.1" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="DAC.exe.manifest" size="8428">
+    <dependentAssembly dependencyType="install" codebase="DAC.exe.manifest" size="8888">
       <assemblyIdentity name="DAC.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>immQDozfxcIbL7lSNpPhQIS8gyM=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dm990r/CBDgtVChHY6hlzGV7pwuB4FSM70aQ6q0rhgc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

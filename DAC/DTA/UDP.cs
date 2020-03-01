@@ -17,7 +17,7 @@ namespace DAC
         private static IPEndPoint sendingEndPoint = null;
         private static IPEndPoint listenerEndPoint = null;
         private static Socket sendingSocket = null;
-        private static string newline = Environment.NewLine;
+        private static readonly string newline = Environment.NewLine;
         private static string receivedData2 = "";
 
         #region comments
@@ -61,8 +61,14 @@ namespace DAC
 
         public static void StartListener(int listenPort)
         {
-            listener = new UdpClient(listenPort);
-
+            try
+            {
+                listener = new UdpClient(listenPort);
+            }
+            catch
+            {
+                return;
+            }
             listenerEndPoint = new IPEndPoint(IPAddress.Any, listenPort);
 
             byte[] receiveByteArray;
@@ -80,7 +86,7 @@ namespace DAC
                     {
                         if (FormMain.receivedData.Length == 0)
                         {
-                            FormMain.receivedData = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
+                            FormMain.receivedData = ":" + Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length) + ":";
 
                             if (FormMain.receivedData.Length > 4 && FormMain.logDetail)
                                 ImportExport.LogMessage("Received   package: " + FormMain.receivedData, true);
@@ -88,7 +94,7 @@ namespace DAC
                         else
                         {
                             receivedData2 = Encoding.ASCII.GetString(receiveByteArray, 0, receiveByteArray.Length);
-                            FormMain.receivedData += receivedData2.Substring(receivedData2.IndexOf("*") + 1);
+                            FormMain.receivedData += ":" + receivedData2.Substring(receivedData2.IndexOf("*") + 1) + ":";
 
                             if (FormMain.receivedData.Length > 4 && FormMain.logDetail)
                                 ImportExport.LogMessage("+ Received package: " + FormMain.receivedData, true);

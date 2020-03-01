@@ -67,9 +67,11 @@ namespace DAC
         {
             try
             {
-                ImportExport.LogMessage(GetSerial + " CmdMax7219DisplayInit(Modul: " + devAdress.ToString("X2") + ", decodeMode:" + decodeMode.ToString("X2") + ", intensity: "
-                    + intensity.ToString("X2") + ", scanLimit: " + scanLimit.ToString("X2") + ")", true);
-
+                if (FormMain.logDetail)
+                {
+                    ImportExport.LogMessage(GetSerial + " CmdMax7219DisplayInit(Modul: " + devAdress.ToString("X2") + ", decodeMode:" + decodeMode.ToString("X2") + ", intensity: "
+                        + intensity.ToString("X2") + ", scanLimit: " + scanLimit.ToString("X2") + ")", true);
+                }
                 this.arcazeDevice.Command.CmdMax7219DisplayInit(devAdress, decodeMode, intensity, scanLimit);
             }
             catch (Exception e)
@@ -86,10 +88,12 @@ namespace DAC
                 if (brightness > 127)
                     brightness = 127;
 
-                ImportExport.LogMessage(GetSerial + " CmdInitExtensionPort(" + modulType + " numModul: " +
+                if (FormMain.logDetail)
+                {
+                    ImportExport.LogMessage(GetSerial + " CmdInitExtensionPort(" + modulType + " numModul: " +
                    numModules.ToString("X2") + ", Resolution: " + bitsPerPort.ToString("X2") +
                    ", Brightness: " + brightness.ToString("X2") + ")", true);
-
+                }
                 this.arcazeDevice.Command.CmdInitExtensionPort(modulType, numModules, bitsPerPort, brightness);
 
                 return true;
@@ -141,9 +145,10 @@ namespace DAC
 
             try
             {
-                if (log)
+                if (FormMain.logDetail)
+                {
                     ImportExport.LogMessage(GetSerial + " WriteOutputPort(Modul: " + moduleNum.ToString("X2") + ", Connector: " + connectorNum.ToString("X2") + ", Pin: " + (portNum + 1).ToString("D2") + ", Value: " + (data == 0 ? "Off" : (type != 3 ? "On" : data.ToString())) + ")", true);
-
+                }
                 this.arcazeDevice.Command.WriteOutputPort(moduleNum, connectorNum, portNum, Convert.ToUInt32(data), ArcazeCommand.OutputOperators.PlainWrite, false);
                 this.arcazeDevice.Command.UpdateOutputPorts();
             }
@@ -180,8 +185,10 @@ namespace DAC
         {
             try
             {
-                ImportExport.LogMessage(GetSerial + " SetPinDirection(Connector: " + port.ToString("X2") + ", Pin: " + (pin + 1).ToString("D2") + ", Direction: " + (direction == 1 ? "Output" : "Input") + ")", true);
-
+                if (FormMain.logDetail)
+                {
+                    ImportExport.LogMessage(GetSerial + " SetPinDirection(Connector: " + port.ToString("X2") + ", Pin: " + (pin + 1).ToString("D2") + ", Direction: " + (direction == 1 ? "Output" : "Input") + ")", true);
+                }
                 this.arcazeDevice.Command.CmdSetPinDirection(port, pin, direction);
             }
             catch (Exception f)
@@ -226,7 +233,7 @@ namespace DAC
                     StopWatch.NOP(delay);
                     arcazeDevice.Command.CmdMax7219WriteDigits(devAdress, Digits, digitMask);
                 }
-                if (log)
+                if (FormMain.logDetail)
                 {
                     digitsValue = "";
 
